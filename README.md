@@ -2,9 +2,9 @@
 
 ## Descripción del problema:
 
-A la hora de cocinar es típico que, cuando hay dos o más personas implicadas, surjan situaciones en las que cuesta mucho ponerse de acuerdo en qué se desea cocinar y comer. Es un caso especialmente típico en parejas.
-
-
+Tomar la decisión de qué cocinar o comer cuándo debe haber un consenso mutuo entre varias personas presenta dificultades debido a lo compleja que puede volverse dicha decisión.
+Esta depende de factores muy limitantes, como los alimentos disponibles o las alergias e intolerancias pasando por factores más situacionales, como el tiempo de cocción o el esfuerzo necesario y, finalmente los más subjetivos, como lo que le apetece comer a cada individuo. Todos ellos son determinantes para la comida final, pues si se requiere un consenso al 100%, basta con que a una persona no le apetezca X para que dicha comida sea descartada.
+Tener en cuenta todos estos factores para llegar a una decisión común no es tarea fácil y más teniendo en cuenta que la complejidad aumenta de forma considerable conforme aumenta el número de personas.
 
 ## La Configuración del Repositorio
 
