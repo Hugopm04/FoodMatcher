@@ -20,6 +20,15 @@ Quiero estas restricciones porque mi objetivo es privatizar el repositorio al te
 
 En el [.gitignore](.gitignore) he incluido las extensiones típicas para trabajar con Python y en Visual Studio Code. Al menos el Backend será en Python, elegido por la familiaridad que tengo con él y por lo ágil que es programar en este lenguage. Si en el futuro requiero de otro lenguage de programación para el Frontend (cosa probable si quiero algo decente) puedo añadirlo al gitignore conforme se dé el caso.
 
-## Tarjeta del Juego de Rol
+## Tarjetas del Juego de Rol
 
-![Tarjeta de validación del juego de rol](img/Juego%20de%20Rol.jpg)
+### Tarjeta 0.2
+
+Tarjeta de cliente actualizada. Entrevista real a una persona con el problema, incluyendo preguntas y respuestas.
+![Tarjeta de validación del juego de rol 0.2](img/Juego%20de%20Rol%200.2.jpg)
+
+### Tarjeta 0.1
+
+Acredita que estuve en clase el día que se realizó la actividad, pero ha sido sustituida por otra atendiendo a las peticiones del profesor.
+
+![Tarjeta de validación del juego de rol 0.1](img/Juego%20de%20Rol%200.1.jpg)
