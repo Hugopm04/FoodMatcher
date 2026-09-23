@@ -9,6 +9,9 @@ Tener en cuenta todos estos factores para llegar a una decisión común no es ta
 ### Los Datos Necesarios
 Es un problema en el que, dado un conjunto de recetas, se escoja aquella que mejor se adapte a la situación y preferencias del grupo. Necesita para su resolución por tanto: Un conjunto de recetas, la situación de un grupo y sus preferencias. El problema se da por resuelto si se encuentra una receta que satisfazca todas las exigencias del grupo y respete todos los límites. De no existir dicha receta, la solución al problema será aquella que satisfazca la mayor cantidad de restricciones fuertes y, en caso de empate, la que satisfazca la mayor cantidad de restricciones ligeras.
 
+## Configuración del Repositorio
+Puede ser encontrada en: [configuración](docs/configuracion.md)
+Se recomienda consultar también [estructura](docs/estructura.md)
 
 ## Tarjetas del Juego de Rol
 
