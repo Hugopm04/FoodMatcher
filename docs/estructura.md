@@ -3,21 +3,27 @@
 Estructura de directorios del repositorio, sus funciones y justificaciones.
 
 **En el directorio principal**
+|---|
 | [README.md](#readme) |
 | [LICENSE](#license) |
 | [.gitignore](#gitignore) |
+|---|
 
 **docs**
+|---|
 | [/docs](#docs) |
 | [estructura.md](#estructura) |
 | [configuracion.md](#configuración) |
+|---|
 
 **img**
+|---|
 | [img](#img) |
+|---|
 
 ### README
 
-Únicamente para contener la descripción del problema, del proyecto y enlaces a documentos que demuestren que el objetivo ha sido mejorado. [README](../README.md)
+Únicamente para contener la descripción del problema, del proyecto y enlaces a documentos que demuestren que el objetivo ha sido superado. [README](../README.md)
 
 ### LICENSE
 
@@ -29,10 +35,10 @@ Quiero estas restricciones porque mi objetivo es privatizar el repositorio al te
 En el [.gitignore](../.gitignore) he incluido las extensiones típicas para trabajar con Python y en Visual Studio Code. Al menos el Backend será en Python, elegido por la familiaridad que tengo con él y por lo ágil que es programar en este lenguaje. Si en el futuro requiero de otro lenguaje de programación para el Frontend (cosa probable si quiero algo decente) puedo añadirlo al gitignore conforme se dé el caso.
 
 ## Docs
-Carpeta para almacenar toda la documentación del proyecto a excepción del [README](README.md).
+Carpeta para almacenar toda la documentación del proyecto a excepción del [README](../README.md).
 
 ### Estructura
-Documento para almacenar la organización estructural del proyécto, dónde está cada archivo y qué hace.
+Documento para almacenar la organización estructural del proyecto, dónde está cada archivo y qué hace.
 
 ### Configuración
 Documento para explicar cómo se ha configurado el proyecto y proveer pruebas de que realmente ha sido configurado así.

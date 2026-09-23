@@ -2,10 +2,8 @@
 
 ## Claves SSH
 
-Las dos opciones para contribuir a un proyecto desde la terminal son SSH o HTTPS. Mediante HTTPS necesitas un token de acceso que solo sirve temporalmente, teniendo que renovarlo de vez en cuando. Por el otro lado la clave SSH solo require una configuración inicial y ya se puede usar indefinidamente. 
-Y, aunque se pueden crear tokens sin límite de duración, supone un riesgo de seguridad. Ya que estos depende de un gestor de credenciales que puede dejarlos expuestos.
-Por el contrario la parte privada de la clave ssh nunca se envía a la red y se le puede asignar una *passphrase* para que solo tú puedas acceder a ella.
-Por último, el token HTTPS sirve solo para autorizarte el acceso a hacer cambios al directorio, mientras que la clave SSH no solo te autoriza sino que además te identifica. Especialmente relevante para que quede constancia de qué contribuciones haces al proyecto. 
+Las dos opciones para contribuir a un proyecto desde la terminal son SSH o HTTPS. Mediante HTTPS necesitas un token de acceso que solo sirve temporalmente, teniendo que renovarlo de vez en cuando. Por el otro lado la clave SSH solo requiere una configuración inicial y ya se puede usar indefinidamente. 
+Y, aunque se pueden crear tokens sin límite de duración, supone un riesgo de seguridad. Ya que estos dependen de un gestor de credenciales que puede dejarlos expuestos.
 
 Clave creada el 17-09-2026:
 
@@ -16,7 +14,7 @@ Utilizo el algoritmo ed25519 para generar la clave porque es el más moderno y e
 - La mitad pública (`~/.ssh/github_ed25519.pub`)
 - La privada no sale de `~/.ssh` (permisos 600).
 
-La mitad pública está pegada en github mediante el procedimiento de "Crear nueva clave SSH", acredito que he hecho el proceso anterior con la siguiente captura:
+La mitad pública está pegada en github mediante el procedimiento de "Crear nueva clave SSH", mientras que la privada está guardada localmente en mi ordenador y nunca sale a la red. acredito que he hecho el proceso anterior con la siguiente captura:
 ![Prueba clave SSH](../img/Prueba%20clave%20SSH.png)
 
 `~/.ssh/config` asocia la clave al host:
@@ -43,7 +41,7 @@ Comprobación:
 
 Configurado en `~/.gitconfig` (global, sin sobreescritura local en este repo).
 
-Debo introducir mi correo y mi usuario de github para que se me puedan atribuir a mí las contribuciones que haga al proyecto. La clave sirve para identificar a mi dispositivo, pero el usuario y correo para identificarme a mí como colaborador. Además, git no compureba el email, lo añade tal cual al commit, recalcando así la necesidad de que el mail coincida con el vinculado con el usuario de github, para que se te pueda identificar correctamente.
+Debo introducir mi correo y mi usuario de github para que se me puedan atribuir a mí las contribuciones que haga al proyecto. La clave sirve para identificar a mi dispositivo, pero el usuario y correo para identificarme a mí como colaborador. Además, git no comprueba el email, lo añade tal cual al commit, recalcando así la necesidad de que el mail coincida con el vinculado con el usuario de github, para que se te pueda identificar correctamente.
 
 ## Herramientas
 
