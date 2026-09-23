@@ -1,22 +1,23 @@
 # Configuración del Proyecto
 
-# Configuración del Proyecto
-
 ## Claves SSH
 
-SSH permite que cualquiera con la clave privada pueda contribuir en el proyecto.
+Las dos opciones para contribuir a un proyecto desde la terminal son SSH o HTTPS. Mediante HTTPS necesitas un token de acceso que solo sirve temporalmente, teniendo que renovarlo de vez en cuando. Por el otro lado la clave SSH solo require una configuración inicial y ya se puede usar indefinidamente. 
+Y, aunque se pueden crear tokens sin límite de duración, supone un riesgo de seguridad. Ya que estos depende de un gestor de credenciales que puede dejarlos expuestos.
+Por el contrario la parte privada de la clave ssh nunca se envía a la red y se le puede asignar una *passphrase* para que solo tú puedas acceder a ella.
+Por último, el token HTTPS sirve solo para autorizarte el acceso a hacer cambios al directorio, mientras que la clave SSH no solo te autoriza sino que además te identifica. Especialmente relevante para que quede constancia de qué contribuciones haces al proyecto. 
 
 Clave creada el 17-09-2026:
 
     ssh-keygen -t ed25519 -C "hugoperezm2004trabajo@gmail.com" -f ~/.ssh/github_ed25519
 
-ed225519 es el procedimiento por el que genero la clave SSH, lo he escogido por ser seguro.
+Utilizo el algoritmo ed25519 para generar la clave porque es el más moderno y estandarizado además de ser muy seguro para lo poco que ocupa. La clave se divide en dos partes que están en:
 
-La mitad pública (`~/.ssh/github_ed25519.pub`)
-La privada no sale de `~/.ssh` (permisos 600).
+- La mitad pública (`~/.ssh/github_ed25519.pub`)
+- La privada no sale de `~/.ssh` (permisos 600).
 
 La mitad pública está pegada en github mediante el procedimiento de "Crear nueva clave SSH", acredito que he hecho el proceso anterior con la siguiente captura:
-![Prueba clave SSH](img/Prueba%20clave%20SSH.jpg)
+![Prueba clave SSH](../img/Prueba%20clave%20SSH.png)
 
 `~/.ssh/config` asocia la clave al host:
 
@@ -26,7 +27,7 @@ La mitad pública está pegada en github mediante el procedimiento de "Crear nue
       IdentityFile ~/.ssh/github_ed25519
       IdentitiesOnly yes
 
-Esto hace me identifica en la terminal, para poder realizar acciones git desde la misma con el mismo nivel de acceso que si lo estuviera haciendo desde la web de github, sin tener que iniciar sesión cada vez.
+Esto selecciona la clave que hemos creado para usarla en github sin comprobar ninguna otra.
 
 Comprobación:
 
@@ -42,9 +43,11 @@ Comprobación:
 
 Configurado en `~/.gitconfig` (global, sin sobreescritura local en este repo).
 
+Debo introducir mi correo y mi usuario de github para que se me puedan atribuir a mí las contribuciones que haga al proyecto. La clave sirve para identificar a mi dispositivo, pero el usuario y correo para identificarme a mí como colaborador. Además, git no compureba el email, lo añade tal cual al commit, recalcando así la necesidad de que el mail coincida con el vinculado con el usuario de github, para que se te pueda identificar correctamente.
+
 ## Herramientas
 
 - **git-iv**: Plugin ofrecido por el profesor para facilitar operaciones relacionadas con la realización de los objetivos. Instalado en `~/.local/bin/git-iv`. Lo uso para crear ramas, cambiar a ellas de manera automática y subir los objetivos.
   `git iv objetivo <n>` y `git iv sube-objetivo`.
-- **Avatar**: Hugopm04
-- **Nick en la hoja compartida**: `Hugopm04`. 
+- **Avatar**: Una foto mía editada por IA en la que salgo ligeramente más fuerte de lo que soy en realidad.
+- **Nick en la hoja compartida**: `Hugopm04`. Ya apuntado en la hoja compartida.
