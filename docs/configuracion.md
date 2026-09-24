@@ -14,7 +14,7 @@ Utilizo el algoritmo ed25519 para generar la clave porque es el más moderno y e
 - La mitad pública (`~/.ssh/github_ed25519.pub`)
 - La privada no sale de `~/.ssh` (permisos 600).
 
-La mitad pública está pegada en github mediante el procedimiento de "Crear nueva clave SSH", mientras que la privada está guardada localmente en mi ordenador y nunca sale a la red. acredito que he hecho el proceso anterior con la siguiente captura:
+La mitad pública está pegada en GitHub mediante el procedimiento de "Crear nueva clave SSH", mientras que la privada está guardada localmente en mi ordenador y nunca sale a la red. Acredito que he hecho el proceso anterior con la siguiente captura:
 ![Prueba clave SSH](../img/Prueba%20clave%20SSH.png)
 
 `~/.ssh/config` asocia la clave al host:
@@ -39,7 +39,7 @@ Comprobación:
     $ git config --global user.email
     hugoperezm2004trabajo@gmail.com
 
-Configurado en `~/.gitconfig` (global, sin sobreescritura local en este repo).
+Configurado en `~/.gitconfig` (global, sin sobrescritura local en este repo).
 
 Debo introducir mi correo y mi usuario de github para que se me puedan atribuir a mí las contribuciones que haga al proyecto. La clave sirve para identificar a mi dispositivo, pero el usuario y correo para identificarme a mí como colaborador. Además, git no comprueba el email, lo añade tal cual al commit, recalcando así la necesidad de que el mail coincida con el vinculado con el usuario de github, para que se te pueda identificar correctamente.
 
