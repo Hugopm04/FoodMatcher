@@ -2,7 +2,7 @@
 
 ## Claves SSH
 
-Las dos opciones para contribuir a un proyecto desde la terminal son SSH o HTTPS. Mediante HTTPS necesitas un token de acceso que solo sirve temporalmente, teniendo que renovarlo de vez en cuando. Por el otro lado la clave SSH solo requiere una configuración inicial y ya se puede usar indefinidamente. 
+Las dos opciones para contribuir a un proyecto desde la terminal son SSH o HTTPS. Mediante HTTPS necesitas un token de acceso que solo sirve temporalmente, teniendo que renovarlo de vez en cuando. Por otro lado, la clave SSH solo requiere una configuración inicial y ya se puede usar indefinidamente. 
 Y, aunque se pueden crear tokens sin límite de duración, suponen un riesgo de seguridad, ya que estos dependen de un gestor de credenciales que puede dejarlos expuestos.
 
 Utilizo el algoritmo ed25519 para generar la clave porque es el más moderno y estandarizado además de ser muy seguro para lo poco que ocupa.
