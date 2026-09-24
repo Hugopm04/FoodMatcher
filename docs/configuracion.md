@@ -15,8 +15,7 @@ Debo configurar mi correo y mi usuario de GitHub en la terminal para que se me p
 
 ## Herramientas
 
-- **git-iv**: Plugin ofrecido por el profesor para facilitar operaciones relacionadas con la realización de los objetivos. Instalado en `~/.local/bin/git-iv`. Lo uso para crear ramas, cambiar a ellas de manera automática y subir los objetivos.
-  `git iv objetivo <n>` y `git iv sube-objetivo`.
+- **git-iv**: Plugin ofrecido por el profesor para facilitar operaciones relacionadas con la realización de los objetivos. Lo uso para crear ramas, cambiar a ellas de manera automática y subir los objetivos.
 - **Avatar**: Una foto mía editada por IA en la que salgo ligeramente más fuerte de lo que soy en realidad.
 - **Nick en la hoja compartida**: `Hugopm04`. Ya apuntado en la hoja compartida.
 
