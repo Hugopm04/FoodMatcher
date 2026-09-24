@@ -25,7 +25,6 @@ Las recetas se escogen de un catálogo del repositorio ampliado con creaciones d
 
 ## Configuración del Repositorio
 Puede ser encontrada en: [configuración](docs/configuracion.md)
-Se recomienda consultar también [estructura](docs/estructura.md)
 
 ## Tarjetas del Juego de Rol
 
