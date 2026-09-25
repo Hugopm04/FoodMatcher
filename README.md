@@ -20,9 +20,10 @@ Las preferencias son limitaciones débiles en el siguiente orden:
 - Límite deseado de tiempo de cocción
 
 El problema se da por resuelto si se encuentra una receta que satisfaga todas las exigencias del grupo y respete todos los límites. De no existir dicha receta, la solución al problema será aquella que satisfaga la mayor cantidad de limitaciones fuertes por orden, y en caso de empate, la mayor cantidad de limitaciones débiles por orden.
-Las recetas se escogen de un catálogo del repositorio ampliado con creaciones de los usuarios. 
+Las recetas se escogen de un catálogo del repositorio.
 El catálogo del repositorio es obtenido de gousto.co.uk a través de su API: https://production-api.gousto.co.uk/cmsreadbroker/v1/recipe/
 Filtraré alérgenos y alimentos a los que se puedan tener intolerancias con ayuda de la base de datos existente en la api api.nal.usda.gov/fdc/v1.
+Este proceso se hará una vez y luego se mantendrá el catálogo en el repositorio.
 
 ## Configuración del Repositorio
 Puede ser encontrada en: [configuración](docs/configuracion.md)
