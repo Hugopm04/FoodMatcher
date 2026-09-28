@@ -4,13 +4,16 @@
 
 ## Configuración Inicial
 
-Frecuencia: 1 única vez
+Frecuencia para cualquier usuario 1 única vez.
 
 El usuario desea tener acceso a los servicios de FoodMatcher desde su dispositivo móvil. El usuario elige un NickName e indica si padece de alguna alergia, intolerancia y si sigue alguna dieta. Fin del proceso.
 
 ## Uso Normal
 
-Frecuencia: Hasta 6 veces al día, probablemente no menos de 1 vez al mes.
+Frecuencia para usuarios como: 
+    - [Jorge](personas.md#Jorge): Entre 1 y 5 veces al mes.
+    - [Hugo y Marta](personas.md#hugo-pérez-y-marta-rossi): Entre 3 y 6 veces por semana.
+    - [Hermanos Maristas](personas.md#comunidad-de-hermanos-maristas-granada): Al menos 2 veces al día.
 
 El usuario desea elegir para él mismo o para él y un grupo una receta para cocinar. Tanto él como cada persona del posible grupo posee un dispositivo móvil en el que han realizado previamente la configuración inicial. El usuario entra en FoodMatcher. (Opcional) Actualiza los alimentos que tiene disponibles. 
 
@@ -23,6 +26,9 @@ Decide comenzar el proceso de elección. Selecciona las recetas deseadas de las 
 
 ## Configuración Opcional
 
-Frecuencia: Hasta 1 vez por día, probablemente una vez cada varios años o nunca.
+Frecuencia para usuarios como:
+    - [Jorge](personas.md#Jorge): Una vez cada X años por cambio de dieta o intolerancia desarrollada. Puede ser nunca.
+    - [Hugo y Marta](personas.md#hugo-pérez-y-marta-rossi): Una vez cada X años por cambio de dieta o intolerancia desarrollada. Puede ser nunca.
+    - [Hermanos Maristas](personas.md#comunidad-de-hermanos-maristas-granada): Quizás una vez al año por cambios de hermanos que vienen y van, cambios de dieta o intolerancia desarrollada.
 
 El usuario introdujo mal los datos en la configuración inicial o ha cambiado de estilo dietético. El usuario indica qué desea cambiar desde su dispositivo móvil. Fin del proceso. 
