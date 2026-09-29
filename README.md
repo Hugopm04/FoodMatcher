@@ -13,6 +13,7 @@ Tener en cuenta todos estos factores para llegar a una decisión común no es ta
 ### Introducidos por Usuarios
 Los usuarios poseen la información de qué alimentos tienen, la situación y preferencias de cada uno y pueden introducirlas manualmente.
 La situación se compone de limitaciones fuertes en el siguiente orden:
+- Ingredientes disponibles
 - Alergias
 - Intolerancias
 - Estilos de alimentación (vegetarianismo, veganismo, ...)
