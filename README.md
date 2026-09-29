@@ -12,14 +12,14 @@ Tener en cuenta todos estos factores para llegar a una decisión común no es ta
 
 ### Introducidos por Usuarios
 Los usuarios poseen la información de qué alimentos tienen, la situación y preferencias de cada uno y pueden introducirlas manualmente.
-La situación se compone de limitaciones fuertes en el siguiente orden:
+La situación se compone de restricciones fuertes en el siguiente orden:
 - Ingredientes disponibles
 - Alergias
 - Intolerancias
 - Estilos de alimentación (vegetarianismo, veganismo, ...)
 - Límite real de tiempo de cocción
 
-Las preferencias son limitaciones débiles en el siguiente orden:
+Las preferencias son restricciones débiles en el siguiente orden:
 - Que apetece o no apetece al usuario
 - Límite deseado de tiempo de cocción
 
@@ -40,7 +40,7 @@ Las recetas van a ser construidas y almacenadas en el repositorio siguiendo el s
     - La idea principal es seguir un proceso iterativo en el que se comience haciendo la fusión más básica, y se evolucione a incluir términos más específicos que no estén contemplados en las bases de datos. Plurales, sinónimos que falten, etc.
 
 ## Condiciones de Éxito
-El problema se da por resuelto si se encuentra una receta que satisfaga todas las exigencias del grupo y respete todos los límites. De no existir dicha receta, la solución al problema será aquella que satisfaga la mayor cantidad de limitaciones fuertes por orden, y en caso de empate, la mayor cantidad de limitaciones débiles por orden.
+El problema se da por resuelto si se encuentra una receta que satisfaga todas las restricciones del grupo. De no existir dicha receta, la solución al problema será aquella que satisfaga la mayor cantidad de restricciones fuertes por orden, y en caso de empate, la mayor cantidad de restricciones débiles por orden.
 
 ## Planificación
 Perfiles de potenciales usuarios: [docs/personas.md](docs/personas.md)
@@ -48,6 +48,7 @@ User Journey: [docs/journey.md](docs/journey.md)
 Historias de Usuario: [docs/historias_usuario.md](docs/historias_usuario.md)
 Las Issues de las HU: https://github.com/Hugopm04/FoodMatcher/issues?q=label%3Auser-stories
 Los milestones: https://github.com/Hugopm04/FoodMatcher/milestones
+Glosario de términos: [docs/glosario.md](docs/glosario.md)
 
 ## Configuración del Repositorio
 Puede ser encontrada en: [configuración](docs/configuracion.md)

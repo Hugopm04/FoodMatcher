@@ -2,6 +2,8 @@
 
 ¿Qué hace el usuario desde que usa FoodMatcher hasta que lo deja?
 
+Glosario de términos: [docs/glosario.md](docs/glosario.md)
+
 ## Configuración Inicial
 
 Frecuencia para cualquier usuario 1 única vez.
