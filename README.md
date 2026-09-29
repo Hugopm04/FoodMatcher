@@ -1,5 +1,7 @@
 # Servicio Móvil FoodMatcher
 
+_Para el objetivo 1 referirse a [Planificación](#planificación)_
+
 ## Descripción del problema
 
 Tomar la decisión de qué cocinar para luego comerlo si debe haber un consenso mutuo entre un grupo de personas familiares entre sí que se encuentran presencialmente juntos presenta dificultades debido a lo compleja que puede volverse dicha decisión.
@@ -38,6 +40,13 @@ Las recetas van a ser construidas y almacenadas en el repositorio siguiendo el s
 
 ## Condiciones de Éxito
 El problema se da por resuelto si se encuentra una receta que satisfaga todas las exigencias del grupo y respete todos los límites. De no existir dicha receta, la solución al problema será aquella que satisfaga la mayor cantidad de limitaciones fuertes por orden, y en caso de empate, la mayor cantidad de limitaciones débiles por orden.
+
+## Planificación
+Perfiles de potenciales usuarios: [docs/personas.md](docs/personas.md)
+User Journey: [docs/journey.md](docs/journey.md)
+Historias de Usuario: [docs/historias_usuario.md](docs/historias_usuario.md)
+Las Issues de las HU: https://github.com/Hugopm04/FoodMatcher/issues?q=label%3Auser-stories
+Los milestones: https://github.com/Hugopm04/FoodMatcher/milestones
 
 ## Configuración del Repositorio
 Puede ser encontrada en: [configuración](docs/configuracion.md)
