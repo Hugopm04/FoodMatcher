@@ -21,7 +21,7 @@ Limitación concreta que condiciona la validez de una receta y su probabilidad d
 ### Restricción Débil
 
 Limitación que condiciona la probabilidad de que una receta sea recomendada o no, con el siguiente orden de importancia:
-    - Apetencia 
+    - Apetencia (lo que elige el usuario)
     - Tiempo deseado de cocción. 
 
 ### Restricción Fuerte
