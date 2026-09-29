@@ -57,9 +57,3 @@ Puede ser encontrada en: [configuración](docs/configuracion.md)
 
 Tarjeta de cliente actualizada. Entrevista real a una persona con el problema, incluyendo preguntas y respuestas.
 ![Tarjeta de validación del juego de rol 0.2](img/Juego%20de%20Rol%200.2.jpg)
-
-### Tarjeta 0.1
-
-Acredita que estuve en clase el día que se realizó la actividad, pero ha sido sustituida por otra atendiendo a las peticiones del profesor.
-
-![Tarjeta de validación del juego de rol 0.1](img/Juego%20de%20Rol%200.1.jpg)
