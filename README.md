@@ -58,4 +58,4 @@ Puede ser encontrada en: [configuración](docs/configuracion.md)
 ### Tarjeta 0.2
 
 Tarjeta de cliente actualizada. Entrevista real a una persona con el problema, incluyendo preguntas y respuestas.
-![Tarjeta de validación del juego de rol 0.2](img/Juego%20de%20Rol%200.2.jpg)
+[Tarjeta de validación del juego de rol 0.2](img/Juego%20de%20Rol%200.2.jpg)
