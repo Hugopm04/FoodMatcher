@@ -2,7 +2,7 @@
 
 ¿Qué hace el usuario desde que usa FoodMatcher hasta que lo deja?
 
-Glosario de términos: [docs/glosario.md](glosario.md)
+Glosario de términos: [docs/glosario.md](docs/glosario.md)
 
 ## Configuración Inicial
 
