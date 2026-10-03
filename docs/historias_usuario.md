@@ -1,6 +1,6 @@
 # Historias de Usuario
 
-Glosario de términos: [docs/glosario.md](docs/glosario.md)
+Glosario de términos: [docs/glosario.md](glosario.md)
 
 ## [HU001]
 [Jorge](personas.md#jorge) tiene la tarde libre y no sabe qué cocinar para la cena. Podría buscar en internet, pero el proceso le parece tedioso (buscar recetas, encontrar una que le guste, que resulte que tiene los ingredientes necesarios, que se ajuste al tiempo que quiere dedicarle a cocinar...)
