@@ -3,8 +3,8 @@
 Glosario de términos: [docs/glosario.md](glosario.md)
 
 ## [M0]
-Entrega el catálogo de recetas procesado, donde se tiene el nombre, la descripción y los ingredientes de la receta almacenados en data/recetas.csv.
-Se entrega un sistema para almacenar ingredientes, alergias, intolerancias y dieta de un usuario.
+Entrega el catálogo de recetas procesado, donde se tiene el nombre, la descripción y los ingredientes de la receta en forma de un fichero de texto estructurado .
+Se entrega un sistema capaz de almacenar ingredientes, alergias, intolerancias y dieta de un usuario.
 Si el revisor del PR del objetivo 2 considera que el problema del README está representado y modelizado por este milestone, se considera validado.
 
 ## [M1]
