@@ -30,7 +30,8 @@ Limitación que condiciona la probabilidad de que una receta sea recomendada o n
 ### Restricción Fuerte
 
 Limitación que invalida una receta, con el siguiente orden de importancia: 
-    - Inventario 
-    - Alergias, Intolerancias 
+    - Inventario (excluyente)
+    - Alergias (excluyente)
+    - Intolerancias 
     - Dieta 
     - Límite real del tiempo de cocción.
