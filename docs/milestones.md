@@ -12,4 +12,4 @@ Continúa comprobando que efectivamente el M1 parte de las funcionalidades neces
 Entrega un programa a un usuario que le permita:
 Almacenar sus datos (ingredientes disponibles, alergias, intolerancias y dieta).
 Dados sus datos, devolver las recetas potenciales para dicho usuario, excluyendo aquellas con restricciones excluyentes.
-Si existe un caso en el que el orden de las recetas no respete la jerarquía de restricciones establecida, los tests deben fallar.
+Si existe un caso en el que el orden de las recetas no respete la jerarquía de restricciones establecida o entregue a un usuario una receta que no cumple una restricción excluyente, los tests deben fallar.
