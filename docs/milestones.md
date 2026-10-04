@@ -13,4 +13,4 @@ Entrega un programa a un usuario que le permita:
 Almacenar sus datos (ingredientes disponibles, alergias, intolerancias y dieta).
 Dados sus datos, devolver las recetas potenciales para dicho usuario.
 El programa posee sus propios tests para verificar su funcionamiento.
-Si existe un caso en el que el orden de las recetas no respete la jerarquía de restricciones establecida o entregue a un usuario una receta que no cumple una restricción fuerte habiendo otras que sí las cumplen, los tests deben fallar.
+Si existe un caso en el que el orden de las recetas no respete la jerarquía de restricciones establecida o entregue a un usuario una receta que no cumple una restricción fuerte habiendo otras que sí la cumplen, los tests deben fallar.

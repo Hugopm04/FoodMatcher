@@ -15,7 +15,7 @@ Ingredientes disponibles por el usuario.
 ## Proceso de Elección
 
 Proceso por el cual, tras haber obtenido los datos del usuario, el sistema devuelve las recetas potenciales.
-Dichas recetas se organizan de la siguiente forman. Las recetas que cumplan las mismas restricciones se agrupan, y se van devolviendo las recetas de cada grupo. El orden en el que se devuelven las recetas de un grupo es aleatorio. El orden en el que se devuelven los grupos es determinado por las restricciones que satisfacen atentiendo a la jerarquía existente.
+Dichas recetas se organizan de la siguiente forma. Las recetas que cumplan las mismas restricciones se agrupan, y se van devolviendo las recetas de cada grupo. El orden en el que se devuelven las recetas de un grupo es aleatorio. El orden en el que se devuelven los grupos es determinado por las restricciones que satisfacen atendiendo a la jerarquía existente.
 
 ## Restricción
 
