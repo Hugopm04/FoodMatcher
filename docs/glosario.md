@@ -29,7 +29,7 @@ Limitación que condiciona la probabilidad de que una receta sea recomendada o n
 
 ### Restricción Fuerte
 
-Limitación que invalida una receta, con el siguiente orden de importancia: 
+Limitación que en principio invalida una receta. El único caso en el que no invalida una receta que la incumpla es cuando no haya recetas disponibles que no la incumplan. Con el siguiente orden de importancia: 
     - Inventario (excluyente)
     - Alergias (excluyente)
     - Intolerancias 
