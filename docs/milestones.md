@@ -11,4 +11,4 @@ Continúa comprobando que efectivamente el M1 parte de las funcionalidades neces
 ## [M1]
 Entrega un módulo con las siguientes capacidades:
 Dados los datos de un usuario almacenados a través del módulo de M0, devuelve las recetas potenciales para dicho usuario.
-Los tests deben pasar y el revisor debe validar que los test verifican que se resuelva el problema del usuario.
+Si existe un caso en el que el orden de las recetas no respete la jerarquía de restricciones establecida, los tests deben fallar.
