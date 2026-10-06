@@ -3,10 +3,12 @@
 Glosario de términos: [docs/glosario.md](glosario.md)
 
 ## [M0]
-Entrega un módulo que permite al producto desarrollado en el M1:
-Listar las recetas. Almacenar y entregar los ingredientes, alergias, intolerancias y dieta de un usuario.
-El proceso de validación comienza por seguir las HU e intentar representarlas usando el módulo entregado. Si no es posible, el módulo está mal.
-Continúa comprobando que efectivamente el M1 parte de las funcionalidades necesarias para desempeñar su función descrita sin necesidad de modificar M0. Si no es posible, el módulo está mal.
+Modelo de HU_001, HU_002 y HU_003 creado a través de la metodología _DDD_ sin incluir la lógica de negocio. Válido si además de seguir la metodología _DDD_ cumple que:
+    - Cada _issue_ representa un problema concreto derivado de al menos una _HU_.
+    - Todos los problemas contenidos en las distintas _HU_ han sido representados con issues.
+    - Cada fragmento del entregable está asociado al _issue_ que resuelve o avanza a resolver.
+    - Cada _commit_ referencia o cierra un único _issue_.
+
 
 ## [M1]
 Entrega un programa a un usuario que le permita:
