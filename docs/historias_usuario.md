@@ -13,4 +13,4 @@ A y B quieren preparar una comida juntos. B tiene X tiempo para cocinar porque l
 ## [HU003]
 // Historia de usuario avanzada (varios usuarios, todas las restricciones aplican)
 [Hermanos Maristas](personas.md#comunidad-de-hermanos-maristas-granada): La Comunidad de Hermanos se ha reunido en su totalidad un domingo para comer juntos. Precisamente porque tienen muchos alimentos distintos, no se deciden a qué preparar con tantas opciones disponibles. Además, como son tantos, recoger la opinión de todos a mano o usando un único dispositivo sería tedioso y lento. Por último debe ser algo que respete las intolerancias que tienen algunos de ellos.
-El grupo de A se reúne una mañana para preparar una comida para comérsela juntos. 
+El grupo de A se reúne una mañana para preparar una comida para comérsela juntos. Comparten despensa, pero hay un conjunto variado de alergias, 
