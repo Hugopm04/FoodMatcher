@@ -2,6 +2,9 @@
 
 ¿Qué hace el usuario desde que usa FoodMatcher hasta que lo deja?
 
+Si eres un desarrollador trabajando en este proyecto por favor ten en cuenta que el user journey **es una ayuda para comprender el problema** y NO una guía para diseñar la aplicación.
+
+
 Glosario de términos: [docs/glosario.md](glosario.md)
 
 ## Configuración Inicial
