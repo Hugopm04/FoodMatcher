@@ -8,7 +8,7 @@ X tiene toda la mañana antes de irse a trabajar y no sabe qué cocinar. Podría
 
 ## [HU002]
 // Historia de usuario media (varios usuarios, restricciones fuertes distintas entre usuarios)
-[Hugo y Marta:](personas.md#hugo-pérez-y-marta-rossi) Pareja de jóvenes que viven juntos y a veces tienen dificultades para escoger qué cocinar a la hora de la cena. Marta es vegetariana, Hugo tiene clases y actividades a las que debe atender a tiempo, por ello solo coinciden para cenar. Les cuesta encontrar algo que les apetezca a los dos, de lo que tengan los ingredientes necesarios, se ajuste a la dieta de Marta y al tiempo reducido de Hugo. 
+A y B quieren preparar una comida juntos. B tiene X tiempo para cocinar porque luego se va a trabajar. Buscarlo en internet no es una opción, aunque comparten la misma despensa ambos tienen alergias, intolerancias y dietas distintas y encontrar algo que se adapte a todas a la vez es inviable.
 
 ## [HU003]
 // Historia de usuario avanzada (varios usuarios, todas las restricciones aplican)
