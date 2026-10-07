@@ -4,10 +4,10 @@ Potenciales usuarios de FoodMatcher.
 
 ## Personas
 
-### 
+### Jorge Medina
 // El usuario de HU001 y uno de los de HU002
 Joven que vive solo y solo de vez en cuando encuentra dificultades para elegir qué cocinar.
-
+Joven que vive solo y trabaja por las tardes. Es alérgico al huevo, padece celiaquía y es vegetariano.
 
 ### 
 // Pareja de usuario correspondiente con HU002
