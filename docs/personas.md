@@ -14,4 +14,8 @@ Pareja de jóvenes que viven juntos. Hugo trabaja por las tardes, es alérgico a
 
 ### Comunidad de Hermanos Maristas Granada
 // Un grupo de usuarios correspondiente con HU003
- Comunidad religiosa en la que todos los hermanos viven en la misma casa y comen juntos todos los días. Ninguno sigue una dieta específica, aunque algunos tienen intolerancias.
+ Comunidad religiosa en la que todos los hermanos viven juntos. Poseen las siguientes restricciones alimenticias:
+    - alergias: pescado, huevo
+    - intolerancias: celiaquía, leche
+    - dietas: libre, vegetariana
+Según el día los que cocinen pueden querer cocinar más o menos, y también depende del día lo que le apetece comer a cada uno.
