@@ -16,7 +16,7 @@ El usuario desea tener acceso a los servicios de FoodMatcher desde su dispositiv
 ## Uso Normal
 
 Frecuencia para usuarios como: 
-    - [Jorge](personas.md#Jorge): Entre 1 y 5 veces al mes.
+    - [Jorge](personas.md#jorge-medina): Entre 1 y 5 veces al mes.
     - [Hugo y Marta](personas.md#hugo-pérez-y-marta-rossi): Entre 3 y 6 veces por semana.
     - [Hermanos Maristas](personas.md#comunidad-de-hermanos-maristas-granada): Al menos 2 veces al día.
 
@@ -32,7 +32,7 @@ Decide comenzar el proceso de elección. Selecciona las recetas deseadas de las 
 ## Configuración Opcional
 
 Frecuencia para usuarios como:
-    - [Jorge](personas.md#Jorge): Una vez cada X años por cambio de dieta o intolerancia desarrollada. Puede ser nunca.
+    - [Jorge](personas.md#jorge-medina): Una vez cada X años por cambio de dieta o intolerancia desarrollada. Puede ser nunca.
     - [Hugo y Marta](personas.md#hugo-pérez-y-marta-rossi): Una vez cada X años por cambio de dieta o intolerancia desarrollada. Puede ser nunca.
     - [Hermanos Maristas](personas.md#comunidad-de-hermanos-maristas-granada): Quizás una vez al año por cambios de hermanos que vienen y van, cambios de dieta o intolerancia desarrollada.
 
