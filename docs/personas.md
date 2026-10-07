@@ -10,7 +10,7 @@ Joven que vive solo y trabaja por las tardes. Es alérgico al huevo, padece celi
 
 ### Hugo Pérez y Marta Rossi
 // Pareja de usuario correspondiente con HU002
-Pareja de jóvenes que viven juntos y a veces tienen dificultades para escoger qué cocinar a la hora de la cena. Marta es vegetariana, Hugo tiene clases y actividades a las que debe atender a tiempo, por ello solo coinciden para cenar.
+Pareja de jóvenes que viven juntos. Hugo trabaja por las tardes, es alérgico a los cacahuetes, intolerante a la leche y no sigue una dieta específica. Marta es alérgica al marisco, celíaca y vegetariana. 
 
 ### Comunidad de Hermanos Maristas Granada
 // Un grupo de usuarios correspondiente con HU003
