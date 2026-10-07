@@ -8,8 +8,9 @@ Potenciales usuarios de FoodMatcher.
 // El usuario de HU001 y uno de los de HU002
 Joven que vive solo y solo de vez en cuando encuentra dificultades para elegir qué cocinar.
 
+
 ### 
-// El otro usuario de HU002
+// Pareja de usuario correspondiente con HU002
 Pareja de jóvenes que viven juntos y a veces tienen dificultades para escoger qué cocinar a la hora de la cena. Marta es vegetariana, Hugo tiene clases y actividades a las que debe atender a tiempo, por ello solo coinciden para cenar.
 
 ### Comunidad de Hermanos Maristas Granada
