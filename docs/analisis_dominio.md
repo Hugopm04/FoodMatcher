@@ -23,3 +23,8 @@ Se mide en minutos enteros y siempre es mayor que cero. Se trata de un objeto va
 
 Se tienen tres dietas, a saber, libre, vegetariana y vegana. Libre es quien puede comer de todo y se relaciona con quien no sigue una dieta específica dentro de las personas. Cada una es más restrictiva que la anterior, así que una receta vegana vale también para un vegetariano y para alguien con dieta libre.
 Al ser una lista cerrada de valores se representa con un enumerado.
+
+## Alergias (#10)
+
+Solo se admiten los alérgenos de la lista de Open Food Facts, ya que según el README es con la que se etiquetan las recetas. De hecho una alergia fuera de esa lista no se podría comprobar.
+Al ser una lista cerrada, se representan con un enumerado. Por otro lado un alimento hereda los alérgenos de su alimento padre. Por último destacar que una persona puede tener ninguna o varias alergias.
