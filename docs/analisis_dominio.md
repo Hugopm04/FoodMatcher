@@ -28,3 +28,7 @@ Al ser una lista cerrada de valores se representa con un enumerado.
 
 Solo se admiten los alérgenos de la lista de Open Food Facts, ya que según el README es con la que se etiquetan las recetas. De hecho una alergia fuera de esa lista no se podría comprobar.
 Al ser una lista cerrada, se representan con un enumerado. Por otro lado un alimento hereda los alérgenos de su alimento padre. Por último destacar que una persona puede tener ninguna o varias alergias.
+
+## Intolerancias (#11)
+
+Se nombran por el componente que no se tolera. Cada alimento puede contener ese componente, tener trazas o estar libre de él. Como se trata de una restricción fuerte, solo es apta una receta libre del componente, es decir, las trazas también la descartan. Destacar que una persona puede tener varias intolerancias o ninguna. Al ser una lista cerrada de componentes, se representan con un enumerado.
