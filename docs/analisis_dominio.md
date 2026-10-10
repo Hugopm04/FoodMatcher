@@ -37,5 +37,9 @@ Se nombran por el componente que no se tolera(gluten,lactosa...). Cada alimento 
 
 Un alimento se identifica por su nombre en la taxonomía de Open Food Facts, de modo que distintos de un mismo alimento, corresponden al mismo alimento. Destacar que un alimento conoce a su alimento padre, sus alérgenos, los componentes que contiene o  de los que tiene trazas y las dietas para las que es apto. Es un objeto valor, ya que dos alimentos con el mismo nombre son el mismo alimento. No puede tener nombre vacío. Destacar que un alimento que no está en la taxonomía no se admite, porque no se podrían comprobar sus restricciones.
 
+## Inventario (#13)
+
+Se trata el conjunto de alimentos que hay en casa, sin cantidades, porque la HU solo habla de los alimentos que tenga en casa. Puede estar vacío, ya que es una situación real, en dicho caso ninguna receta cumplirá el inventario. Una receta solo lo cumple si todos sus ingredientes están en él, ya que según el glosario el inventario se trata de una restricción fuerte. Se trata de un objeto valor , puesto que dos inventarios con los mismos alimentos serían iguales. Como no tiene más datos ni reglas propias, no se crea una clase asociada.
+
 
 
