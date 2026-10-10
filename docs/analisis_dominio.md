@@ -18,3 +18,8 @@ Se usa Python 3.14.8 por los siguientes motivos:
 El glorsario habla de tiempo de cocción, pero se interpreta como el tiempo total de preparación porque la HU pide que la receta no tarde más de 4 horas. Y hay recetas que llevan tiempo aunque no se cuezan. 
 Se mide en minutos enteros y siempre es mayor que cero. Se trata de un objeto valor porque incluye esa validación y lo usan tanto la receta como el límite de tiempo del usuario.
 
+
+## Dieta (#9)
+
+Se tienen tres dietas, a saber, libre, vegetariana y vegana. Libre es quien puede comer de todo y se relaciona con quien no sigue una dieta específica dentro de las personas. Cada una es más restrictiva que la anterior, así que una receta vegana vale también para un vegetariano y para alguien con dieta libre.
+Al ser una lista cerrada de valores se representa con un enumerado.
