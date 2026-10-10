@@ -15,20 +15,27 @@ Se usa Python 3.14.8 por los siguientes motivos:
 
 ## Tiempo (#8)
 
-El glorsario habla de tiempo de cocción, pero se interpreta como el tiempo total de preparación porque la HU pide que la receta no tarde más de 4 horas. Y hay recetas que llevan tiempo aunque no se cuezan. 
+El glosario habla de tiempo de cocción, pero se interpreta como el tiempo total de preparación porque la HU pide que la receta no tarde más de 4 horas. Y hay recetas que llevan tiempo aunque no se cuezan. 
 Se mide en minutos enteros y siempre es mayor que cero. Se trata de un objeto valor porque incluye esa validación y lo usan tanto la receta como el límite de tiempo del usuario.
 
 
 ## Dieta (#9)
 
 Se tienen tres dietas, a saber, libre, vegetariana y vegana. Libre es quien puede comer de todo y se relaciona con quien no sigue una dieta específica dentro de las personas. Cada una es más restrictiva que la anterior, así que una receta vegana vale también para un vegetariano y para alguien con dieta libre.
-Al ser una lista cerrada de valores se representa con un enumerado.
+Es un objeto valor y al ser una lista cerrada de valores se representa con un enumerado.
 
 ## Alergias (#10)
 
 Solo se admiten los alérgenos de la lista de Open Food Facts, ya que según el README es con la que se etiquetan las recetas. De hecho una alergia fuera de esa lista no se podría comprobar.
-Al ser una lista cerrada, se representan con un enumerado. Por otro lado un alimento hereda los alérgenos de su alimento padre. Por último destacar que una persona puede tener ninguna o varias alergias.
+Es un objeto valor y al ser una lista cerrada, se representa con un enumerado. Por otro lado un alimento hereda los alérgenos de su alimento padre. Por último destacar que una persona puede tener ninguna o varias alergias.
 
 ## Intolerancias (#11)
 
-Se nombran por el componente que no se tolera. Cada alimento puede contener ese componente, tener trazas o estar libre de él. Como se trata de una restricción fuerte, solo es apta una receta libre del componente, es decir, las trazas también la descartan. Destacar que una persona puede tener varias intolerancias o ninguna. Al ser una lista cerrada de componentes, se representan con un enumerado.
+Se nombran por el componente que no se tolera(gluten,lactosa...). Cada alimento puede contener ese componente, tener trazas o estar libre de él. Como se trata de una restricción fuerte, solo es apta una receta libre del componente, es decir, las trazas también la descartan. Destacar que una persona puede tener varias intolerancias o ninguna. Es un objeto valor y al ser una lista cerrada de componentes, se representan con un enumerado.
+
+## Alimentos (#12)
+
+Un alimento se identifica por su nombre en la taxonomía de Open Food Facts, de modo que distintos de un mismo alimento, corresponden al mismo alimento. Destacar que un alimento conoce a su alimento padre, sus alérgenos, los componentes que contiene o  de los que tiene trazas y las dietas para las que es apto. Es un objeto valor, ya que dos alimentos con el mismo nombre son el mismo alimento. No puede tener nombre vacío. Destacar que un alimento que no está en la taxonomía no se admite, porque no se podrían comprobar sus restricciones.
+
+
+
