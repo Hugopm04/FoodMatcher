@@ -16,7 +16,7 @@ class Receta:
     ingredientes: frozenset[Alimento]
     tiempo: Tiempo
 
-    def __post_init(self) -> None:
+    def __post_init__(self) -> None:
         if not self.nombre.strip():
             raise RecetaInvalida("La receta debe tener nombre")
         if not self.ingredientes:
