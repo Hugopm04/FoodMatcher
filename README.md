@@ -51,6 +51,23 @@ Los milestones: https://github.com/Hugopm04/FoodMatcher/milestones
 Glosario de términos: [docs/glosario.md](docs/glosario.md)
 Análisis del dominio de la HU001 : [docs/analisis_dominio.md](docs/analisis_dominio.md)
 
+## Comprobación de código
+
+Las herramientas se instalan en un entorno virtual:
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements_dev.txt
+```
+
+Para comprobar los tipos y el estilo del código:
+
+```bash
+mypy src
+ruff check src
+```
+
 ## Configuración del Repositorio
 Puede ser encontrada en: [configuración](docs/configuracion.md)
 
