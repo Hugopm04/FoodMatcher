@@ -13,7 +13,6 @@ class AlimentoInvalido(ValueError):
 class Alimento:
     """Alimento de la taxonomía de OPen Food Facts que es identificado por su nomnbre"""
 
-
     nombre: str
     padre: "Alimento | None" = field(default=None, compare=False)
     alergenos: frozenset[Alergeno] = field(default=frozenset(), compare=False)
