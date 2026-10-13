@@ -4,14 +4,13 @@ Análisis de la [HU001](historias_usuario.md#hu001) para el Milestone 0.
 
 ## Lenguaje (#7)
 
-Se usa Python 3.14.8 por los siguientes motivos:
+Se usa Go, decisión conjunta tomada con el propietario en #7 , por los siguientes motivos:
 
-- Permite indicar los tipos de los datos y comprobarlos con mypy antes de ejecutar  para que no se confundan conceptos distintos del modelo.
-- Con las dataclasses inmutables se pueden crear objetos que no cambian una vez creados, como los objetos valor.
-- Permite definir excepciones propias para rechazar datos inválidos como un tiempo menor o igual que cero.
-- Se instala en el espacio de usuario con mise y la versión queda fijada en `.python-version`.
-- El estilo del código se comprueba con ruff.
-
+- Los tipos son obligatorios y el compilador los comprueba antes de ejecutar luego no se confunden conceptos distintos del modelo.
+- Los campos que empiezan por minúscula son privados por tanto cada objeto solo se crea con su constructor, que valida los datos y no se puede modificar desde fuera.
+- Los errores se devuelven como valores lo que permite rechazar datos inválidos como un tiempo menor o igual que cero.
+- El formato y las comprobaciones vienen incluidos en el propio lenguaje, sin necesidad de instalar herramientas aparte. Destacar sintaxis sencilla.
+- Se instala en el espacio de usuario con mise y la versión queda fijada en `go.mod`.
 
 ## Tiempo (#8)
 
