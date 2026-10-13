@@ -34,7 +34,7 @@ Se nombran por el componente que no se tolera. Solo se admiten las intolerancias
 
 ## Alimentos (#12)
 
-Un alimento se identifica por su nombre en la taxonomía de Open Food Facts, de modo que nombres distintos de un mismo alimento, corresponden al mismo alimento. Destacar que un alimento conoce a su alimento padre, sus alérgenos, los componentes que contiene o  de los que tiene trazas y las dietas para las que es apto. Es un objeto valor, ya que dos alimentos con el mismo nombre son el mismo alimento. No puede tener nombre vacío. Destacar que un alimento que no está en la taxonomía no se admite, porque no se podrían comprobar sus restricciones.
+Un alimento se trata de uno de los que aparecen en la taxonomía de Open Food Facts, de manera que nombres distintos de un mismo alimento corresponden al mismo alimento. Destacar que un alimento conoce a su alimento padre, sus alérgenos, los componentes que contiene o  de los que tiene trazas y las dietas para las que es apto. Es un objeto valor, ya que para la HU solo importan sus propiedades que no cambian. No cambia una vez creado y dos alimentos con los mismos datos son el mimso alimento. No puede tener nombre vacío. Destacar que un alimento que no está en la taxonomía no se admite.
 
 ## Inventario (#13)
 
