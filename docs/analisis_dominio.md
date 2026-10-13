@@ -42,7 +42,7 @@ Se trata del conjunto de alimentos que hay en casa, sin cantidades, porque la HU
 
 ## Receta (#14)
 
-Una receta tiene nombre, ingredientes y tiempo. Sus alérgenos, intorelancias y dietas no se guardan aparte, sino que se deducen de sus ingredientes. Se trata de una entidad indetificada por su nombre, ya que dos recetas con ingredientes parecidos pueden ser platos distintos. Destacar que debe tener nombre y al menos un ingrediente.
+Una receta tiene nombre, ingredientes y tiempo. Destacar que los pasos son necesarios porque solo con los ingrediente sy el tiempo no se puede preparar. Sus alérgenos, intorelancias y dietas no se guardan aparte, sino que se deducen de sus ingredientes. Se trata de un objeto valor porque no cambia una vez creada y se define por su contenido. De manera que dos recetas con los mismos ingredientes, pasos y tiempo son la misma receta. Debe tener nombre, al menos un ingrediente y al menos un paso.
 
 ## Usuario (#15)
 
