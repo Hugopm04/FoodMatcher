@@ -2,7 +2,7 @@ package recetario
 
 import "errors"
 
-var ErrTiempoInvalido = errors.New("El tiempo tiene que ser un número de minutos mayor que cero")
+var ErrTiempoInvalido = errors.New("el tiempo tiene que ser un número de minutos mayor que cero")
 
 type Tiempo struct {
 	minutos int
