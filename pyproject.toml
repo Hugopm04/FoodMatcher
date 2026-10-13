@@ -1,6 +1,0 @@
-[tool.mypy]
-mypy_path = "src"
-strict = true
-
-[tool.ruff]
-src = ["src"]
