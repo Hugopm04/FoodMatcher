@@ -1,0 +1,44 @@
+package recetario
+
+import (
+	"errors"
+	"slices"
+	"strings"
+)
+
+var (
+	ErrUsuarioSinNick = errors.New("el usuario tiene que  tener nick")
+	ErrDietaInvalida  = errors.New("la dieta no es válida")
+)
+
+type Usuario struct {
+	nick          string
+	dieta         Dieta
+	alergias      []Alergeno
+	intolerancias []Intolerancia
+}
+
+func NuevoUsuario(nick string, dieta Dieta, alergias []Alergeno, intolerancias []Intolerancia) (Usuario, error) {
+	if strings.TrimSpace(nick) == "" {
+		return Usuario{}, ErrUsuarioSinNick
+	}
+	usuario := Usuario{nick: nick}
+	if err := usuario.CambiarRestricciones(dieta, alergias, intolerancias); err != nil {
+		return Usuario{}, err
+	}
+	return usuario, nil
+}
+
+func (u *Usuario) CambiarRestricciones(dieta Dieta, alergias []Alergeno, intolerancias []Intolerancia) error {
+	if dieta < DietaLibre || dieta > DietaVegana {
+		return ErrDietaInvalida
+	}
+	u.dieta = dieta
+	u.alergias = slices.Clone(alergias)
+	u.intolerancias = slices.Clone(intolerancias)
+	return nil
+}
+
+func (u Usuario) MismoUsuario(otro Usuario) bool {
+	return u.nick == otro.nick
+}

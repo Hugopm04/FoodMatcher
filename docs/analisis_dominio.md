@@ -44,9 +44,13 @@ Se trata del conjunto de alimentos que hay en casa, sin cantidades, porque la HU
 
 Una receta tiene nombre, ingredientes y tiempo. Sus alérgenos, intorelancias y dietas no se guardan aparte, sino que se deducen de sus ingredientes. Se trata de una entidad indetificada por su nombre, ya que dos recetas con ingredientes parecidos pueden ser platos distintos. Destacar que debe tener nombre y al menos un ingrediente.
 
-## Usuario y proceso de elección (#15)
+## Usuario (#15)
 
-El usuario es una entidad identificada por su nick, que elige en la configuración inicial del user journey. Contiene sus alergias, intolerancias y dieta, que se indican una sola vez y pueden cambiarse después sin que deje de ser el mismo usuario. Por otro lado, el inventario y el límite de tiempo pertenecen a cada proceso de elección, porque cambian según el momento. Según el user journey, los alimentos se actualizan en cada uso, y en la HU el límite de 4 horas corresponde a una mañana concreta.El proceso de elección es un objeto valor que agrupa el usuario, el inventario y el límite de tiempo de una búsqueda.
+El usuario es una entidad identificada por su nick, que elige en la configuración inicial del user journey. Contiene sus alergias, intolerancias y dieta. La dieta siempre se indica porque quien no sigue ninguna elige la dieta libre, luego no hay una dieta por defecto. Según la configuración opcional del user journey, sus restricciones pueden cambiarse después, sin que deje de ser el mismo usuario.
+
+## Proceso de elección (#15)
+
+El inventario y el límite de tiempo pertenecen a cada proceso de elección, porque cambian según el momento. Según el user journey, los alimentos se actualizan en cada uso, y en la HU el límite de 4 horas corresponde a una mañana concreta.El proceso de elección es un objeto valor que agrupa el usuario, el inventario y el límite de tiempo de una búsqueda.
 
 
 
