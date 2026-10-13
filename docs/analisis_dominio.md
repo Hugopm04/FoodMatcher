@@ -10,7 +10,7 @@ Se usa Go, decisión conjunta tomada con el propietario en #7 , por los siguient
 - Los campos que empiezan por minúscula son privados por tanto cada objeto solo se crea con su constructor, que valida los datos y no se puede modificar desde fuera.
 - Los errores se devuelven como valores lo que permite rechazar datos inválidos como un tiempo menor o igual que cero.
 - El formato y las comprobaciones vienen incluidos en el propio lenguaje, sin necesidad de instalar herramientas aparte. Destacar sintaxis sencilla.
-- Se instala en el espacio de usuario con mise y la versión queda fijada en `go.mod`.
+- Se instala en el espacio de usuario con mise.
 
 ## Tiempo (#8)
 
