@@ -15,7 +15,7 @@ Se usa Go, decisión conjunta tomada con el propietario en #7 , por los siguient
 ## Tiempo (#8)
 
 El glosario habla de tiempo de cocción, pero se interpreta como el tiempo total de preparación porque la HU pide que la receta no tarde más de 4 horas. Y hay recetas que llevan tiempo aunque no se cuezan. 
-Se mide en minutos enteros y siempre es mayor que cero. Se trata de un objeto valor porque incluye esa validación y lo usan tanto la receta como el límite de tiempo del usuario.
+Se mide en minutos enteros y siempre es mayor que cero. Se trata de un objeto valor porque incluye esa validación y lo usan tanto la receta como el límite de tiempo del proceso de elección. Destacar que pese a que tenga nada más que un atributo se crea una estructura propia porque tiene una regla asociada(mayor que cero) y se usa en dos sitios, lo que permite que la validación no se repita.
 
 
 ## Dieta (#9)
