@@ -42,7 +42,7 @@ Se trata del conjunto de alimentos que hay en casa, sin cantidades, porque la HU
 
 ## Receta (#14)
 
-Una receta tiene nombre, ingredientes y tiempo. Destacar que los pasos son necesarios porque solo con los ingrediente sy el tiempo no se puede preparar. Sus alérgenos, intorelancias y dietas no se guardan aparte, sino que se deducen de sus ingredientes. Se trata de un objeto valor porque no cambia una vez creada y se define por su contenido. De manera que dos recetas con los mismos ingredientes, pasos y tiempo son la misma receta. Debe tener nombre, al menos un ingrediente y al menos un paso.
+Una receta tiene nombre, ingredientes, pasos y tiempo. Destacar que los pasos son necesarios porque solo con los ingredientes y el tiempo no se puede preparar. Sus alérgenos, intolerancias y dietas no se guardan aparte, sino que se deducen de sus ingredientes. Se trata de un objeto valor porque no cambia una vez creada y se define por su contenido. De manera que dos recetas con los mismos ingredientes, pasos y tiempo son la misma receta. Debe tener nombre, al menos un ingrediente y al menos un paso.
 
 ## Usuario (#15)
 
