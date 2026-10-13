@@ -6,13 +6,11 @@ from foodmatcher.intolerancia import Intolerancia
 
 
 class UsuarioInvalido(ValueError):
-    """Se lanza cuando los datos de un usuario no son válidos"""
+    pass
 
 
 @dataclass(eq=False)
 class Usuario:
-    """Usuario identificado por su nick con sus correspondientes restricciones alimentarias"""
-
     nick: str
     dieta: Dieta = Dieta.LIBRE
     alergias: frozenset[Alergeno] = frozenset()

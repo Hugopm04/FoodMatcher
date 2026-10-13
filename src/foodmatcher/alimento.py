@@ -6,13 +6,11 @@ from foodmatcher.intolerancia import Intolerancia
 
 
 class AlimentoInvalido(ValueError):
-    """Se lanza cuando los datos de un alimento no son válidos"""
+    pass
 
 
 @dataclass(frozen=True)
 class Alimento:
-    """Alimento de la taxonomía de OPen Food Facts que es identificado por su nomnbre"""
-
     nombre: str
     padre: "Alimento | None" = field(default=None, compare=False)
     alergenos: frozenset[Alergeno] = field(default=frozenset(), compare=False)

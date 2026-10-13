@@ -5,13 +5,11 @@ from foodmatcher.tiempo import Tiempo
 
 
 class RecetaInvalida(ValueError):
-    """Se lanza cuando los datos de una receta no son válidos"""
+    pass
 
 
 @dataclass(eq=False)
 class Receta:
-    """Receta que se identifica por su nombre"""
-
     nombre: str
     ingredientes: frozenset[Alimento]
     tiempo: Tiempo

@@ -2,13 +2,11 @@ from dataclasses import dataclass
 
 
 class TiempoInvalido(ValueError):
-    """Se lanza cuando el tiempo no es un número entero de minutos mayor que cero."""
+    pass
 
 
 @dataclass(frozen=True)
 class Tiempo:
-    """Tiempo total de preparación de una receta en minutos."""
-
     minutos: int
 
     def __post_init__(self) -> None:

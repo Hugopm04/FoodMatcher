@@ -7,8 +7,6 @@ from foodmatcher.usuario import Usuario
 
 @dataclass(frozen=True)
 class ProcesoEleccion:
-    """Datos de una búsqueda de una receta concreta"""
-
     usuario: Usuario
     inventario: Inventario
     limite: Tiempo

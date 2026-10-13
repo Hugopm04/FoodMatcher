@@ -2,8 +2,6 @@ from enum import Enum
 
 
 class Alergeno(Enum):
-    """Alérgenos de la taxonomía de Open Food Facts"""
-
     GLUTEN = "gluten"
     CRUSTACEOS = "crustáceos"
     HUEVOS = "huevos"
