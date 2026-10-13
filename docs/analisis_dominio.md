@@ -30,7 +30,7 @@ Es un objeto valor y al ser una lista cerrada, se representa con un enumerado. P
 
 ## Intolerancias (#11)
 
-Se nombran por el componente que no se tolera(gluten,lactosa...). Cada alimento puede contener ese componente, tener trazas o estar libre de él. Como se trata de una restricción fuerte, solo es apta una receta libre del componente, es decir, las trazas también la descartan. Destacar que una persona puede tener varias intolerancias o ninguna. Es un objeto valor y al ser una lista cerrada de componentes, se representan con un enumerado.
+Se nombran por el componente que no se tolera. Solo se admiten las intolerancias cuyo componente aparece en la lista de alérgenos de Open Food Facts, que es la misma con la que se etiquetan las recetas, ya que otro componente no se podría comprobar. Por eso son el gluten (celiaquía) y la lactosa, que se comprueba con la leche, coincidiendo con las intolerancias que aparecen en las personas. Cada alimento puede contener ese componente, tener trazas o estar libre de él. Como se trata de una restricción fuerte, solo es apta una receta libre del componente, es decir, las trazas también la descartan. Destacar que una persona puede tener varias intolerancias o ninguna. Es un objeto valor y al ser una lista cerrada de componentes, se representan con un enumerado.
 
 ## Alimentos (#12)
 
