@@ -1,6 +1,6 @@
 package recetario
 
-import "slices"
+import "maps"
 
 type ProcesoEleccion struct {
 	usuario    Usuario
@@ -9,5 +9,5 @@ type ProcesoEleccion struct {
 }
 
 func NuevoProcesoEleccion(usuario Usuario, inventario Inventario, limite Tiempo) ProcesoEleccion {
-	return ProcesoEleccion{usuario: usuario, inventario: slices.Clone(inventario), limite: limite}
+	return ProcesoEleccion{usuario: usuario, inventario: maps.Clone(inventario), limite: limite}
 }

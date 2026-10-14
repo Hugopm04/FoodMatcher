@@ -1,3 +1,3 @@
 package recetario
 
-type Inventario []Alimento
+type Inventario map[string]bool
