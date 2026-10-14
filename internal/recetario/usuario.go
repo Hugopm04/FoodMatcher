@@ -32,6 +32,16 @@ func NuevoUsuario(nick string, dieta Dieta, alergias []Alergeno, intolerancias [
 }
 
 func (u *Usuario) CambiarRestricciones(dieta Dieta, alergias []Alergeno, intolerancias []Intolerancia) error {
+	if err := comprobarRestricciones(dieta, alergias, intolerancias); err != nil {
+		return err
+	}
+	u.dieta = dieta
+	u.alergias = slices.Clone(alergias)
+	u.intolerancias = slices.Clone(intolerancias)
+	return nil
+}
+
+func comprobarRestricciones(dieta Dieta, alergias []Alergeno, intolerancias []Intolerancia) error {
 	if dieta < DietaLibre || dieta > DietaVegana {
 		return ErrDietaInvalida
 	}
@@ -45,9 +55,6 @@ func (u *Usuario) CambiarRestricciones(dieta Dieta, alergias []Alergeno, intoler
 			return ErrIntoleranciaInvalida
 		}
 	}
-	u.dieta = dieta
-	u.alergias = slices.Clone(alergias)
-	u.intolerancias = slices.Clone(intolerancias)
 	return nil
 }
 
