@@ -42,7 +42,7 @@ func (u *Usuario) CambiarRestricciones(dieta Dieta, alergias []Alergeno, intoler
 }
 
 func comprobarRestricciones(dieta Dieta, alergias []Alergeno, intolerancias []Intolerancia) error {
-	if dieta < DietaLibre || dieta > DietaVegana {
+	if dieta < DietaLibre || DietaVegana < dieta {
 		return ErrDietaInvalida
 	}
 	for _, alergia := range alergias {
