@@ -2,7 +2,7 @@ package recetario
 
 import (
 	"errors"
-	"slices"
+	"maps"
 	"strings"
 )
 
@@ -14,27 +14,36 @@ var (
 type Alimento struct {
 	nombre    string
 	padre     string
-	alergenos []Alergeno
-	contiene  []Intolerancia
-	trazas    []Intolerancia
-	dietas    []Dieta
+	alergenos map[Alergeno]bool
+	contiene  map[Intolerancia]bool
+	trazas    map[Intolerancia]bool
+	dietas    map[Dieta]bool
 }
 
-func NuevoAlimento(nombre string, padre string, alergenos []Alergeno, contiene []Intolerancia, trazas []Intolerancia, dietas []Dieta) (Alimento, error) {
+func NuevoAlimento(nombre string, padre string, alergenos map[Alergeno]bool, contiene map[Intolerancia]bool, trazas map[Intolerancia]bool, dietas map[Dieta]bool) (Alimento, error) {
 	if strings.TrimSpace(nombre) == "" {
 		return Alimento{}, ErrAlimentoSinNombre
 	}
-	for _, componente := range trazas {
-		if slices.Contains(contiene, componente) {
+	for componente := range trazas {
+		if contiene[componente] {
 			return Alimento{}, ErrContenidoYTrazas
 		}
 	}
 	return Alimento{
 		nombre:    nombre,
 		padre:     padre,
-		alergenos: slices.Clone(alergenos),
-		contiene:  slices.Clone(contiene),
-		trazas:    slices.Clone(trazas),
-		dietas:    slices.Clone(dietas),
+		alergenos: maps.Clone(alergenos),
+		contiene:  maps.Clone(contiene),
+		trazas:    maps.Clone(trazas),
+		dietas:    maps.Clone(dietas),
 	}, nil
+}
+
+func (a Alimento) Igual(otro Alimento) bool {
+	return a.nombre == otro.nombre &&
+		a.padre == otro.padre &&
+		maps.Equal(a.alergenos, otro.alergenos) &&
+		maps.Equal(a.contiene, otro.contiene) &&
+		maps.Equal(a.trazas, otro.trazas) &&
+		maps.Equal(a.dietas, otro.dietas)
 }
