@@ -13,14 +13,14 @@ var (
 
 type Alimento struct {
 	nombre    string
-	padre     string
+	padre     *Alimento
 	alergenos map[Alergeno]bool
 	contiene  map[Intolerancia]bool
 	trazas    map[Intolerancia]bool
 	dietas    map[Dieta]bool
 }
 
-func NuevoAlimento(nombre string, padre string, alergenos map[Alergeno]bool, contiene map[Intolerancia]bool, trazas map[Intolerancia]bool, dietas map[Dieta]bool) (Alimento, error) {
+func nuevoAlimento(nombre string, padre *Alimento, alergenos map[Alergeno]bool, contiene map[Intolerancia]bool, trazas map[Intolerancia]bool, dietas map[Dieta]bool) (Alimento, error) {
 	if strings.TrimSpace(nombre) == "" {
 		return Alimento{}, ErrAlimentoSinNombre
 	}
@@ -46,4 +46,11 @@ func (a Alimento) Igual(otro Alimento) bool {
 		maps.Equal(a.contiene, otro.contiene) &&
 		maps.Equal(a.trazas, otro.trazas) &&
 		maps.Equal(a.dietas, otro.dietas)
+}
+
+func (a Alimento) TieneAlergeno(alergeno Alergeno) bool {
+	if a.alergenos[alergeno] {
+		return true
+	}
+	return a.padre != nil && a.padre.TieneAlergeno(alergeno)
 }
