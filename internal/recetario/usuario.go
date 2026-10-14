@@ -7,8 +7,10 @@ import (
 )
 
 var (
-	ErrUsuarioSinNick = errors.New("el usuario tiene que  tener nick")
-	ErrDietaInvalida  = errors.New("la dieta no es válida")
+	ErrUsuarioSinNick       = errors.New("el usuario tiene que  tener nick")
+	ErrDietaInvalida        = errors.New("la dieta no es válida")
+	ErrAlergiaInvalida      = errors.New("la alergia no es válida")
+	ErrIntoleranciaInvalida = errors.New("la intolerancia no es válida")
 )
 
 type Usuario struct {
@@ -32,6 +34,16 @@ func NuevoUsuario(nick string, dieta Dieta, alergias []Alergeno, intolerancias [
 func (u *Usuario) CambiarRestricciones(dieta Dieta, alergias []Alergeno, intolerancias []Intolerancia) error {
 	if dieta < DietaLibre || dieta > DietaVegana {
 		return ErrDietaInvalida
+	}
+	for _, alergia := range alergias {
+		if alergia < AlergenoGluten || alergia > AlergenoMoluscos {
+			return ErrAlergiaInvalida
+		}
+	}
+	for _, intolerancia := range intolerancias {
+		if intolerancia < IntoleranciaGluten || intolerancia > IntoleranciaLactosa {
+			return ErrIntoleranciaInvalida
+		}
 	}
 	u.dieta = dieta
 	u.alergias = slices.Clone(alergias)
