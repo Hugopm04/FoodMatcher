@@ -49,7 +49,7 @@ Historias de Usuario: [docs/historias_usuario.md](docs/historias_usuario.md)
 Las Issues de las HU: https://github.com/Hugopm04/FoodMatcher/issues?q=label%3Auser-stories
 Los milestones: https://github.com/Hugopm04/FoodMatcher/milestones
 Glosario de términos: [docs/glosario.md](docs/glosario.md)
-Análisis del dominio de la HU001 : [docs/analisis_dominio.md](docs/analisis_dominio.md)
+
 
 
 ## Configuración del Repositorio
