@@ -7,7 +7,7 @@ var ErrAlimentoFueraDeTaxonomia = errors.New("el alimento no está en la taxonom
 type Inventario map[string]bool
 
 func (i Inventario) Añadir(taxonomia Taxonomia, nombre string) error {
-	if _, esta := taxonomia[nombre]; !esta {
+	if _, esta := taxonomia.alimentos[nombre]; !esta {
 		return ErrAlimentoFueraDeTaxonomia
 	}
 	i[nombre] = true

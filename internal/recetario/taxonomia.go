@@ -7,15 +7,21 @@ var (
 	ErrPadreDesconocido = errors.New("el alimento padre no está en la taxonomía")
 )
 
-type Taxonomia map[string]*Alimento
+type Taxonomia struct {
+	alimentos map[string]*Alimento
+}
+
+func NuevaTaxonomia() Taxonomia {
+	return Taxonomia{alimentos: map[string]*Alimento{}}
+}
 
 func (t Taxonomia) Registrar(nombre string, padre string, alergenos map[Alergeno]bool, contiene map[Intolerancia]bool, trazas map[Intolerancia]bool, dietas map[Dieta]bool) error {
-	if _, esta := t[nombre]; esta {
+	if _, esta := t.alimentos[nombre]; esta {
 		return ErrAlimentoRepetido
 	}
 	var alimentoPadre *Alimento
 	if padre != "" {
-		encontrado, esta := t[padre]
+		encontrado, esta := t.alimentos[padre]
 		if !esta {
 			return ErrPadreDesconocido
 		}
@@ -25,6 +31,6 @@ func (t Taxonomia) Registrar(nombre string, padre string, alergenos map[Alergeno
 	if err != nil {
 		return err
 	}
-	t[nombre] = &alimento
+	t.alimentos[nombre] = &alimento
 	return nil
 }
