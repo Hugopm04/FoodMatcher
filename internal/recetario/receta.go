@@ -5,8 +5,6 @@ import (
 	"slices"
 )
 
-var ErrRecetaSinIngredientes = errors.New("la receta debe tener al menos un ingrediente")
-
 type Receta struct {
 	ingredientes []Alimento
 	tiempo       Tiempo
@@ -14,7 +12,7 @@ type Receta struct {
 
 func NuevaReceta(ingredientes []Alimento, tiempo Tiempo) (Receta, error) {
 	if len(ingredientes) == 0 {
-		return Receta{}, ErrRecetaSinIngredientes
+		return Receta{}, errors.New("la receta debe tener al menos un ingrediente")
 	}
 	return Receta{ingredientes: slices.Clone(ingredientes), tiempo: tiempo}, nil
 }
