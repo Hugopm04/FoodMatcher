@@ -1,10 +1,8 @@
 package recetario
 
-type ProcesoEleccion struct {
+type Usuario struct {
 	alergias      []Alergeno
 	intolerancias []Intolerancia
 	dieta         Dieta
 	inventario    []Alimento
-	limiteMinutos int
-	recetas       []Receta
 }
