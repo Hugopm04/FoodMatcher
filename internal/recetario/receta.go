@@ -1,6 +1,6 @@
 package recetario
 
 type Receta struct {
-	ingredientes []string
+	ingredientes map[string]struct{}
 	minutos      int
 }
