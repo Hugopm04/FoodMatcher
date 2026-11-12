@@ -1,3 +1,5 @@
 lenguaje: Go
 entidad: internal/recetario/receta.go
-
+automatizar: 
+  fichero: fichero_de_tareas 
+  orden: mock check
