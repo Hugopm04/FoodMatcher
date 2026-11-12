@@ -50,10 +50,12 @@ Las Issues de las HU: https://github.com/Hugopm04/FoodMatcher/issues?q=label%3Au
 Los milestones: https://github.com/Hugopm04/FoodMatcher/milestones
 Glosario de términos: [docs/glosario.md](docs/glosario.md)
 
-
-
 ## Configuración del Repositorio
 Puede ser encontrada en: [configuración](docs/configuracion.md)
+
+## Lo que sea del obj3
+
+Para iniciar el taskfile: mock check
 
 ## Tarjetas del Juego de Rol
 
