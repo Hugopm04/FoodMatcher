@@ -53,7 +53,7 @@ Glosario de términos: [docs/glosario.md](docs/glosario.md)
 ## Configuración del Repositorio
 Puede ser encontrada en: [configuración](docs/configuracion.md)
 
-## Lo que sea del obj3
+## Automatización de Tareas
 
 Para iniciar el taskfile: mock check
 
