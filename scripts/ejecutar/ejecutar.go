@@ -7,12 +7,22 @@ import (
 
 const directorioProyecto = "../internal"
 
-func Comando(nombre string, argumentos ...string) error {
+func preparar(nombre string, argumentos []string) *exec.Cmd {
 	comando := exec.Command(nombre, argumentos...)
 	comando.Dir = directorioProyecto
-	comando.Stdout = os.Stdout
 	comando.Stderr = os.Stderr
+	return comando
+}
+
+func Comando(nombre string, argumentos ...string) error {
+	comando := preparar(nombre, argumentos)
+	comando.Stdout = os.Stdout
 	return comando.Run()
+}
+
+func Salida(nombre string, argumentos ...string) (string, error) {
+	salida, err := preparar(nombre, argumentos).Output()
+	return string(salida), err
 }
 
 func Salir(err error) {
