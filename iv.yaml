@@ -3,4 +3,4 @@ entidad: internal/recetario/cocina.go
 automatizar: 
   fichero: fichero_de_tareas 
   orden: mock
-  test: internal/recetario/cocina_test.go
+test: internal/recetario/cocina_test.go
