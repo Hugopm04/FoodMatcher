@@ -55,6 +55,7 @@ Puede ser encontrada en: [configuración](docs/configuracion.md)
 
 ## Automatización de Tareas
 
+El razonamiento seguido para elegir el gestor de dependencias y el fichero de tareas puede encontrarse en [razonamiento.md](docs/razonamiento.md)
 Para iniciar el taskfile: make check
 
 ## Tarjetas del Juego de Rol
