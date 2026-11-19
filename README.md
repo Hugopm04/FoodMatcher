@@ -57,6 +57,10 @@ Puede ser encontrada en: [configuración](docs/configuracion.md)
 
 Para iniciar el taskfile: mock check
 
+## Tests
+
+Para hacer test: make test
+
 ## Tarjetas del Juego de Rol
 
 ### Tarjeta 0.2
