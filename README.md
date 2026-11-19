@@ -55,7 +55,7 @@ Puede ser encontrada en: [configuración](docs/configuracion.md)
 
 ## Automatización de Tareas
 
-Para iniciar el taskfile: mock check
+Para iniciar el taskfile: make check
 
 ## Tests
 
