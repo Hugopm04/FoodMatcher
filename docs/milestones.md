@@ -2,14 +2,11 @@
 
 Glosario de términos: [docs/glosario.md](glosario.md)
 
-## [M0]
-Modelo de [HU_001](historias_usuario.md#hu001) creado a través de la metodología _DDD_ sin incluir la lógica de negocio. Válido si además de seguir la metodología _DDD_ cumple que:
-    - Cada _issue_ representa un problema concreto derivado de al menos una _HU_.
-    - Todos los problemas contenidos en HU_001 han sido representados con _issues_.
-    - Cada fragmento del entregable está asociado al _issue_ que resuelve o avanza a resolver.
-    - Cada _commit_ referencia o cierra un único _issue_.
+## M1 Automatización de Operaciones:
+Se parte del modelo obtenido en el M0 y al alcanzar este milestone el entregable debe haber pasado por el conjunto de decisiones ténicas sobre las herramientas, servicios y bilbiotecas que se van a usar en el proyecto e incluir la especificación de dependencias del proyecto.
+Se sabe que el producto alcanzado es válido si:
+    - Se ha mantenido la metodología de trabajo en github propuesta en el hito anterior (cada commit está vinculado a un único issue, es atómico, etc)
+    - Dichas decisiones quedan documentadas en forma de issues y sus commits asociados.
+    - Las automatizaciones cubren instalación de dependencias y pueden soportar futura ejecución de tests dirigidas por una herramienta automática.
 
-
-## [M1]
-Se parte del modelo entregado en el milestone 0. Entrega la lógica de negocio necesaria para solucionar el problema de [HU_001](historias_usuario.md#hu001) desarrollada atendiendo a los [principios SOLID](https://es.wikipedia.org/wiki/SOLID) y los tests que verifican dicha lógica.
 
