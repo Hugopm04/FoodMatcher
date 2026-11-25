@@ -92,9 +92,7 @@ Es cierto que no estamos restringidos a scripts bash, que se pueden usar scripts
 
 Task es multiplataforma. Es también lo más cercano a Make que hay. Debe mantenerse el Taskfile principal y asegurarse de delegar bien la lógica a los scripts.
 
-Mage es multiplataforma y no requiere de un lenguaje adicional, aunque su sintaxis es muy distinta a la de Make. Dejaría Go como único lenguaje del que dependería el proyecto por el momento. No obstante, es una herramienta mucho más específica que las dos anteriores, lo que también la hace más vulnerable a ser discontinuada:
-
-> _"Scientific infrastructure, likely meant to serve more general and long-term needs, does indeed demonstrate a slower, more gradual decline"_ — [Scientific Open-Source Software Is Less Likely to Become Abandoned Than One Might Think! Lessons from Curating a Catalog of Maintained Scientific Software](https://dl.acm.org/doi/10.1145/3729369)
+Mage es multiplataforma y no requiere de un lenguaje adicional, aunque su sintaxis es muy distinta a la de Make. Dejaría Go como único lenguaje del que dependería el proyecto por el momento. No obstante, es una herramienta mucho más específica que las dos anteriores, lo que también la hace más vulnerable a ser discontinuada acorde al siguiente estudio [Scientific Open-Source Software Is Less Likely to Become Abandoned Than One Might Think! Lessons from Curating a Catalog of Maintained Scientific Software](https://dl.acm.org/doi/10.1145/3729369).
 
 Mi conclusión es que el mayor riesgo de deuda técnica lo presenta Mage, porque a pesar de ser la única opción que mantiene Go como único lenguaje, es una herramienta bastante específica que ya hemos visto que choca con algunos estándares de la comunidad. Diría que el segundo es Make, porque mantenerlo multiplataforma es la diferencia principal respecto a Task en cuestiones de deuda. Es cierto que Make es una herramienta mucho más asentada, pero considero Task lo suficientemente general y con una base lo bastante sólida como para que la diferencia no sea demasiado relevante en cuanto a riesgo de discontinuación.
 
