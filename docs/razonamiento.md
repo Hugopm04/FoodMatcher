@@ -33,7 +33,7 @@ En conclusión, el uso de go mod puede considerarse seguro a largo plazo, siempr
 
 Issue: [#30](https://github.com/Hugopm04/FoodMatcher/issues/30)
 
-Aunque el único gestor posible es go mod, el objetivo sigue siendo aprender, por tanto se evalúan seguridad y prestaciones del mismo, con la esperanza de familiarizarse con los conceptos para futuras decisiones en otros lenguajes / entornos.
+Aunque el único gestor posible es go mod, **el objetivo sigue siendo aprender y demostrar mi pensamiento crítico**, por tanto se evalúan seguridad y prestaciones del mismo, con la esperanza de familiarizarse con los conceptos para futuras decisiones en otros lenguajes / entornos.
 
 En términos de prestaciones go mod utiliza lazy module loading. Este procedimiento puede reducir el tiempo inmediato de resolución de dependencias (descubrir todas las dependencias necesarias para el proyecto), resolviendo solo las que son directamente necesarias, y no las indirectamente necesarias. Al menos es así a partir de la versión 1.17 [Go 1.17 Release Notes](https://go.dev/doc/go1.17?). La resolución de dependencias (si no me equivoco) no es un proceso especialmente crítico en término de tiempo en los proyectos, y menos en nuestro caso que tenemos muy pocas dependencias.
 
