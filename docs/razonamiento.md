@@ -1,9 +1,7 @@
 # Razonamiento de las decisiones técnicas
 
-| Decisión | Opción elegida | Issue |
-|---|---|---|
-| Gestor de dependencias | `go mod` | [#25](https://github.com/Hugopm04/FoodMatcher/issues/25) |
-| Fichero de tareas | Make con scripts en Go | [#24](https://github.com/Hugopm04/FoodMatcher/issues/24) |
+Gestor de dependencias: `go mod` [#25](https://github.com/Hugopm04/FoodMatcher/issues/25)
+Fichero de tareas: Make con scripts en Go [#24](https://github.com/Hugopm04/FoodMatcher/issues/24)
 
 ## Gestor de dependencias
 
