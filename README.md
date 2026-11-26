@@ -42,22 +42,7 @@ Las recetas van a ser construidas y almacenadas en el repositorio siguiendo el s
 ## Condiciones de Éxito
 El problema se da por resuelto si se encuentra una receta que satisfaga todas las restricciones del grupo. De no existir dicha receta, la solución al problema será aquella que satisfaga la mayor cantidad de restricciones fuertes por orden, y en caso de empate, la mayor cantidad de restricciones débiles por orden.
 
-## Planificación
-Perfiles de potenciales usuarios: [docs/personas.md](docs/personas.md)
-User Journey: [docs/journey.md](docs/journey.md)
-Historias de Usuario: [docs/historias_usuario.md](docs/historias_usuario.md)
-Las Issues de las HU: https://github.com/Hugopm04/FoodMatcher/issues?q=label%3Auser-stories
-Los milestones: https://github.com/Hugopm04/FoodMatcher/milestones
-Glosario de términos: [docs/glosario.md](docs/glosario.md)
+## Automatización de Tareas
 
-
-
-## Configuración del Repositorio
-Puede ser encontrada en: [configuración](docs/configuracion.md)
-
-## Tarjetas del Juego de Rol
-
-### Tarjeta 0.2
-
-Tarjeta de cliente actualizada. Entrevista real a una persona con el problema, incluyendo preguntas y respuestas.
-[Tarjeta de validación del juego de rol 0.2](img/Juego%20de%20Rol%200.2.jpg)
+El razonamiento seguido para elegir el gestor de dependencias y el fichero de tareas puede encontrarse en [razonamiento.md](docs/razonamiento.md)
+Para iniciar el taskfile: make check
