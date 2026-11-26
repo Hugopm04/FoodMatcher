@@ -53,13 +53,26 @@ Task por otro lado no viene instalado y pesa 15.8 MB, considerablemente más pes
 
 Mage no viene por defecto en Go, por lo que hay que considerar también su peso de 1.78 MB.
 
-Los resultados de velocidad son los siguientes (medidos usando oh my posh, en la línea del comando se ve lo que ha tardado el anterior). La tabla es el resumen, las capturas reales las pongo debajo.
+Los resultados de velocidad son los siguientes (medidos usando oh my posh, en la línea del comando se ve lo que ha tardado el anterior). La lista es el resumen, las capturas reales las pongo debajo.
 
-| Herramienta | `installdeps` | `check` | `install` (frío) | `install` (caliente) | `test` |
-|---|---|---|---|---|---|
-| Make | 34 ms | 25 ms | 54 ms | 39 ms | 47 ms |
-| Task | 93 ms | 103 ms | 109 ms | 94 ms | 114 ms |
-| Mage | 90 ms | 82 ms | 3,64 s | 96 ms | 97 ms |
+- Make
+  - `installdeps`: 34 ms
+  - `check`: 25 ms
+  - `install` (frío): 54 ms
+  - `install` (caliente): 39 ms
+  - `test`: 47 ms
+- Task
+  - `installdeps`: 93 ms
+  - `check`: 103 ms
+  - `install` (frío): 109 ms
+  - `install` (caliente): 94 ms
+  - `test`: 114 ms
+- Mage
+  - `installdeps`: 90 ms
+  - `check`: 82 ms
+  - `install` (frío): 3,64 s
+  - `install` (caliente): 96 ms
+  - `test`: 97 ms
 
 Imágenes en la terminal:
 
