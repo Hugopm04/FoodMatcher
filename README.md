@@ -50,6 +50,11 @@ Las Issues de las HU: https://github.com/Hugopm04/FoodMatcher/issues?q=label%3Au
 Los milestones: https://github.com/Hugopm04/FoodMatcher/milestones
 Glosario de términos: [docs/glosario.md](docs/glosario.md)
 
+## Automatización de Tareas
+
+El razonamiento seguido para elegir el gestor de dependencias y el fichero de tareas puede encontrarse en [razonamiento.md](docs/razonamiento.md)
+Para iniciar el taskfile: make check
+
 
 
 ## Configuración del Repositorio

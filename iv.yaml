@@ -1,3 +1,5 @@
 lenguaje: Go
 entidad: internal/recetario/cocina.go
-
+automatizar: 
+  fichero: Makefile 
+  orden: make
