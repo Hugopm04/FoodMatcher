@@ -43,9 +43,9 @@ Lo que saco como mejores prácticas es:
 - Si necesitas varios ficheros de tareas, van en /scripts
 - El fichero de tareas principal debe ir en la raíz del proyecto y ser muy breve
 
-Make es perfectamente capaz de cumplir esos requisitos, pudiendo delegar en scripts de bash, o incluso Go.
+Make es perfectamente capaz de cumplir esos requisitos, pudiendo delegar en scripts de bash.
 
-Task es perfectamente capaz de cumplir esos requisitos, pudiendo delegar en scripts de Task (.yml) o incluso de Go.
+Task es perfectamente capaz de cumplir esos requisitos, pudiendo delegar en scripts de Task (.yml) o bash.
 
 Mage es un poco más problemático para esto. Aunque se pueda tener un único fichero Mage que delegue en otros, sigue rompiendo un poco la filosofía de Mage. Además, deberían estar todos en la carpeta magefiles, sin tener uno en la raíz. Podrían estar en /scripts, pero ya estamos yendo en contra de la filosofía de Mage de nuevo. Por otro lado una ventaja considerable de Mage es que reduce el número de lenguajes de programación usados en el proyecto y por tanto, las dependencias y deuda técnica del mismo (al menos a simple vista).
 
