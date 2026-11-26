@@ -41,20 +41,6 @@ Task es perfectamente capaz de cumplir esos requisitos, pudiendo delegar en scri
 
 Mage es un poco más problemático para esto. Aunque se pueda tener un único fichero Mage que delegue en otros, sigue rompiendo un poco la filosofía de Mage. Además, deberían estar todos en la carpeta magefiles, sin tener uno en la raíz. Podrían estar en /scripts, pero ya estamos yendo en contra de la filosofía de Mage de nuevo. Por otro lado una ventaja considerable de Mage es que reduce el número de lenguajes de programación usados en el proyecto y por tanto, las dependencias y deuda técnica del mismo (al menos a simple vista).
 
-### Deuda técnica
-
-Issue: [#46](https://github.com/Hugopm04/FoodMatcher/issues/46)
-
-Make tiene el problema de que para ser multiplataforma se debe implementar a conciencia. Make acepta código shell en el Makefile, lo que podría hacerlo incompatible entre SOs. Esto aplica también a los scripts en bash, usar make con bash implica que si se quisiera trabajar en múltiples plataformas habría que crear el mismo script para cada plataforma.
-
-Es cierto que no estamos restringidos a scripts bash, que se pueden usar scripts de go. Además se puede evitar por completo incluir comandos shell (que no sean la invocación a los scripts) para que sea compatible con cualquier plataforma. No obstante esto supone un compromiso que debe de mantenerse en el tiempo y supone una deuda a considerar.
-
-Task es multiplataforma. Es también lo más cercano a Make que hay. Debe mantenerse el Taskfile principal y asegurarse de delegar bien la lógica a los scripts.
-
-Mage es multiplataforma y no requiere de un lenguaje adicional, aunque su sintaxis es muy distinta a la de Make. Dejaría Go como único lenguaje del que dependería el proyecto por el momento. No obstante, es una herramienta mucho más específica que las dos anteriores, lo que también la hace más vulnerable a ser discontinuada acorde al siguiente estudio [Scientific Open-Source Software Is Less Likely to Become Abandoned Than One Might Think! Lessons from Curating a Catalog of Maintained Scientific Software](https://dl.acm.org/doi/10.1145/3729369).
-
-Mi conclusión es que el mayor riesgo de deuda técnica lo presenta Mage, porque a pesar de ser la única opción que mantiene Go como único lenguaje, es una herramienta bastante específica que ya hemos visto que choca con algunos estándares de la comunidad. Diría que el segundo es Make, porque mantenerlo multiplataforma es la diferencia principal respecto a Task en cuestiones de deuda. Es cierto que Make es una herramienta mucho más asentada, pero considero Task lo suficientemente general y con una base lo bastante sólida como para que la diferencia no sea demasiado relevante en cuanto a riesgo de discontinuación.
-
 ### Prestaciones
 
 Issue: [#47](https://github.com/Hugopm04/FoodMatcher/issues/47)
