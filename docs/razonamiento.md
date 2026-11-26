@@ -31,8 +31,7 @@ Lo más parecido a mejores prácticas es el [Standard Go Project Layout](https:/
 
 A pesar de que no haya un estándar oficial, el propuesto anteriormente ha sido desarrollado por la comunidad, y se tendrá en cuenta a la hora de tomar las decisiones. En él se habla brevemente de la carpeta _scripts/_ en la que deben ir los ficheros de tareas, de forma que el Makefile (que estaría en la raíz del proyecto) sea más breve. Este proyecto supone entonces el uso de GNU Make junto con scripts auxiliares.
 
-¿Es convincente este enfoque? No. El ejemplo propuesto utiliza scripts en bash como ficheros de tareas, los cuales no son compatibles con windows y son bastante más lentos para trabajos completos en comparación con las otras alternativas. Lo que sí sacaría como mejores prácticas es:
-
+Lo que saco como mejores prácticas es:
 - Si necesitas varios ficheros de tareas, van en /scripts
 - El fichero de tareas principal debe ir en la raíz del proyecto y ser muy breve
 
