@@ -23,9 +23,13 @@ Según la [documentación oficial de go](https://go.dev/doc/articles/go_command)
 
 No obstante, nosotros no vamos solo a compilar, sino también a ejecutar tests, instalar dependencias, etc... Por tanto está justificada la búsqueda de un archivo de tareas.
 
-La opción clásica es [GNU Make](https://www.gnu.org/software/make/manual/make.html), pero también servirían [Task](https://taskfile.dev/) y [Mage](https://magefile.org/).
+Para aplicar estos criterios no se han comparado todos los gestores de tareas disponibles. Se han agrupado por tipo y se ha tomado el representante más característico de cada grupo, de modo que la comparación sea entre enfoques distintos y no entre variantes de un mismo enfoque.
+Se distinguen tres categorías, según dónde y cómo se definen las tareas:
+ - Herramienta incluida en el sistema, con formato propio: representada por [GNU Make](https://www.gnu.org/software/make/manual/make.html), que viene disponible en prácticamente cualquier entorno Unix y es la referencia histórica en automatización de tareas.
+ - Ejecutable independiente con formato estándar: representada por [Task](https://taskfile.dev/), que se instala aparte y define las tareas en un fichero YAML.
+ - Tareas escritas en el lenguaje del proyecto: representada por [Mage](https://magefile.org/), que permite definir las tareas en el propio Go sin añadir otro lenguaje al repositorio.
 
-Parto de estos 3 candidatos.
+El representante de cada categoría se elige por su madurez (uso, mantenimiento y documentación), que es lo que mejor indica si sigue buenas prácticas. La velocidad, el peso y la instalación de dependencias no se usan para elegir representante: se miden después, comparando solo los tres elegidos.
 
 ### Mejores prácticas
 
