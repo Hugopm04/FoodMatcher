@@ -9,6 +9,10 @@ Atendiendo al [portal oficial de desarrollo de go](https://go.dev/ref/mod) go ma
 
 ## Fichero de tareas
 
+### Criterios de Elección
+
+Para elegir el fichero de tareas se tendrá en cuenta principalmente que cumpla con las mejores prácticas, luego que sea veloz compilando el proyecto y comprobando gramática, que pese poco (rápido de instalar) y en último lugar la velocidad de instalación de dependencias.
+
 ### Opciones disponibles
 
 Issue: [#44](https://github.com/Hugopm04/FoodMatcher/issues/44)
