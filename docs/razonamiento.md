@@ -5,45 +5,7 @@ Fichero de tareas: Make con scripts en Go [#24](https://github.com/Hugopm04/Food
 
 ## Gestor de dependencias
 
-### Estándares
-
-Issue: [#26](https://github.com/Hugopm04/FoodMatcher/issues/26)
-
 Atendiendo al [portal oficial de desarrollo de go](https://go.dev/ref/mod) go maneja las dependencias en forma de módulos y es una parte que viene integrada en el lenguaje y siendo obligatorio usarlo a partir de la versión 1.16 por defecto en **_Go Modules_**. Otras alternativas existieron anteriormente en go: dep, glide, godep... Pero todas han quedado obsoletas y descontinuadas.
-
-### Mejores prácticas
-
-Issue: [#28](https://github.com/Hugopm04/FoodMatcher/issues/28)
-
-La mejor práctica en Go es no utilizar ningún gestor de dependencias externo, todo se maneja a través de la propia herramienta de línea de comandos de Go (go), descrito en [la página oficial de gestión de dependencias de Go](https://go.dev/doc/modules/managing-dependencies).
-
-### Deuda técnica
-
-Issue: [#29](https://github.com/Hugopm04/FoodMatcher/issues/29)
-
-El gestor de dependencias aunque no sea una _dependencia de código_ sí es una _dependencia del proyecto_, hecha por un tercero ajeno a nuestro proyecto y por tanto implica deuda técnica. Como en nuestro caso solo ha habido un único candidato, go mod, no podemos comparar su deuda técnica con ningún igual. No obstante, **sigue siendo muy instructivo investigar el estado actual de go mod y su potencial futuro como si existieran otras altertivas**. Consultando [Go 1 and the Future of Go Programs](https://go.dev/doc/go1compat) vemos que los desarrolladores de go mod se han comprometido a mantener compatibilidad entre las versiones actuales y futuras de go 1. Además, los propios desarrolladores han afirmado en [Backward Compatibility, Go 1.21, and Go 2](https://go.dev/blog/compat#:~:text=Backward%20Compatibility%2C%20Go%201.21%2C%20and%20Go%202.,changed%20and%20how%20their%20programs%20would%20break.) que lo más probable es que nunca llegue una versión 2 de go que rompa con las anteriores.
-
-Finalmente, hay otra deuda técnica oculta que implica usar un gestor de dependencias. El trabajo del gestor, entre otras cosas, es facilitar el uso de dependencias. Y como es muy sencillo añadir cualquier dependencia, también es muy sencillo saltarse el paso de comprobar qué mantenimiento se puede esperar de esa dependencia, o que la dependencia es la adecuada. Esto está descrito con mayor detalle, calidad y precisión en [Technical Debt Quadrant](https://martinfowler.com/bliki/TechnicalDebtQuadrant.html).
-
-En conclusión, el uso de go mod puede considerarse seguro a largo plazo, siempre y cuando sea el ingeniero quién elija con criterio las dependencias a usar.
-
-### Seguridad y prestaciones
-
-Issue: [#30](https://github.com/Hugopm04/FoodMatcher/issues/30)
-
-Aunque el único gestor posible es go mod, **el objetivo sigue siendo aprender y demostrar mi pensamiento crítico**, por tanto se evalúan seguridad y prestaciones del mismo, con la esperanza de familiarizarse con los conceptos para futuras decisiones en otros lenguajes / entornos.
-
-En términos de prestaciones go mod utiliza lazy module loading. Este procedimiento puede reducir el tiempo inmediato de resolución de dependencias (descubrir todas las dependencias necesarias para el proyecto), resolviendo solo las que son directamente necesarias, y no las indirectamente necesarias. Al menos es así a partir de la versión 1.17 [Go 1.17 Release Notes](https://go.dev/doc/go1.17?). La resolución de dependencias (si no me equivoco) no es un proceso especialmente crítico en término de tiempo en los proyectos, y menos en nuestro caso que tenemos muy pocas dependencias.
-
-No obstante sigue sin ser despreciable, pues la resolución es la lectura de un gráfico, que puede crecer de manera exponencial (si una dependencia necesita otras 2, y esas dos necesitan 2 cada una...) y que es algo que necesita de la red (un recurso lento comparado con ciclos de reloj).
-
-En términos de seguridad se utiliza un método común en la industria, por el cual se puede generar el hash de una dependencia dado su contenido, y dicho hash cambiaría si dicho contenido cambia. Si no se conoce el hash de una dependencia, go ofrece una tabla certificada que se puede consultar. Esto permite asegurar que la dependencia descargada no ha sido manipulada por terceros en el proceso. Especificado en la [página oficial de go mod](https://go.dev/ref/mod?).
-
-### Decisión
-
-Issue: [#25](https://github.com/Hugopm04/FoodMatcher/issues/25)
-
-Conclusión: go mod es el único gestor de dependencias usado hoy en día y es el estándar de la industria. Cumple con los requisitos de prestaciones y seguridad necesarios y se conoce su deuda técnica asociada.
 
 ## Fichero de tareas
 
