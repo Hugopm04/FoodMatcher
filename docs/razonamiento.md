@@ -57,28 +57,16 @@ Los resultados de velocidad son los siguientes (medidos usando oh my posh, en la
 
 | Herramienta | `installdeps` | `check` | `install` (frío) | `install` (caliente) | `test` |
 |---|---|---|---|---|---|
-| Make | 5,302 s | 1,487 s | 357 ms | 138 ms | 1,283 s |
-| Task | 5,353 s | 1,589 s | 437 ms | 267 ms | 1,373 s |
-| Mage | 7,171 s | 396 ms | 459 ms | 295 ms | 1,401 s |
+| Make | 34 ms | 25 ms | 54 ms | 39 ms | 47 ms |
+| Task | 93 ms | 103 ms | 109 ms | 94 ms | 114 ms |
+| Mage | 90 ms | 82 ms | 3,64 s | 96 ms | 97 ms |
 
 Imágenes en la terminal:
 
-![Tiempos Make](https://github.com/user-attachments/assets/063a5b98-38bc-4969-ae07-f8cc15c30c35)
+![Tiempos Make](https://github.com/user-attachments/assets/6a35f033-f72f-4406-8816-744875f1a644)
 
-![Tiempos Task](https://github.com/user-attachments/assets/28e80af9-6cb5-4062-9cbc-064bba574e74)
+![Tiempos Task](https://github.com/user-attachments/assets/27b76fa1-9d70-45bf-a941-45ef98e1cd50)
 
-![Tiempos de Mage](https://github.com/user-attachments/assets/1d325a81-f0a3-42ff-ac20-657b6bbe06c7)
+![Tiempos de Mage](https://github.com/user-attachments/assets/0e951536-b76b-4463-ae1e-113ddf5ff59f)
 
-Los resultados indican que hay poca diferencia entre las herramientas. Aunque Mage es mucho más rápido para hacer el check, es el más lento en los installs en frío y en caliente. Make ha quedado como ganador indiscutible en velocidad.
-
-### Decisión
-
-Issue: [#24](https://github.com/Hugopm04/FoodMatcher/issues/24)
-
-Make es el más rápido con diferencia, ya sea por venir instalado por defecto, por su poco peso o por su tiempo de ejecución. Además permite la convención sugerida por la comunidad de Go respecto a organización de directorios y es un estándar muy aceptado en la industria. La única pega es recordar no utilizar comandos propios del shell dentro del makefile, para no hacerlo dependiente del shell.
-
-Task es ligeramente más lento que make y ocupa bastante espacio, tiene un poco más de riesgo a ser descontinuado, y la única ventaja que ofrece es que no es necesario preocuparse por el shell.
-
-Mage es lento aunque ocupa bastante poco, es el que mayor riesgo tiene a ser descontinuado con diferencia y rompe con los estándares sugeridos por la comunidad.
-
-Tras estos análisis, me decanto por usar Make en conjunto con scripts en Go siguiendo el estándar sugerido por la comunidad, con las mejores prestaciones y menor riesgo de discontinuidad.
+Los resultados dejan a Make como ganador indiscutible, tanto en peso como en velocidad y compatibilidad con las mejores prácticas.
