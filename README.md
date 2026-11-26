@@ -46,3 +46,7 @@ El problema se da por resuelto si se encuentra una receta que satisfaga todas la
 
 El razonamiento seguido para elegir el gestor de dependencias y el fichero de tareas puede encontrarse en [razonamiento.md](docs/razonamiento.md)
 Para iniciar el taskfile: make check
+
+## Tests
+
+Para hacer test: make test
